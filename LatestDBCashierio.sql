@@ -117,7 +117,7 @@ CREATE TABLE `tblusers` (
   `Username` varchar(45) NOT NULL,
   `UserPassword` varchar(45) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -126,7 +126,7 @@ CREATE TABLE `tblusers` (
 
 LOCK TABLES `tblusers` WRITE;
 /*!40000 ALTER TABLE `tblusers` DISABLE KEYS */;
-INSERT INTO `tblusers` VALUES (7,'Admin','Baguio','Jess Mark','Alamban','Male','Secret','secret@gmail.com','09123456789','baguio','jsmrk12345'),(8,'Admin','Baguio','Jess Mark','Alamban','Male','Tagum City','jsmrk@gmail.com','09912345678','jsmrk12345','jsmrk1234'),(10,'Admin','Baguio','Jess Mark','Alamban','Male','qwerrty','qwerty@gmail.com','0936363636','jsmrk123','jsmrk12345'),(11,'Employee','Chatto','Reobert','Makilang','Male','Mawab','chattouwu@gmail.com','0912345567','chatto123','reobert123'),(12,'Admin','Baguio','Jess Mark','Alamban','Male','Sobrecary','jsmrk@gmail.com','09296651214','jmb','jsmrk123'),(13,'Employee','Baguio','Jess Mark','Alamban','Male','Sobrecary','jsmrk@gmail.com','0912341543','jmb','jsmrk123');
+INSERT INTO `tblusers` VALUES (7,'Admin','Baguio','Jess Mark','Alamban','Male','Secret','secret@gmail.com','09123456789','baguio','jsmrk12345'),(8,'Admin','Baguio','Jess Mark','Alamban','Male','Tagum City','jsmrk@gmail.com','09912345678','jsmrk12345','jsmrk1234'),(10,'Admin','Baguio','Jess Mark','Alamban','Male','qwerrty','qwerty@gmail.com','0936363636','jsmrk123','jsmrk12345'),(11,'Employee','Chatto','Reobert','Makilang','Male','Mawab','chattouwu@gmail.com','0912345567','chatto123','reobert123'),(12,'Admin','Baguio','Jess Mark','Alamban','Male','Sobrecary','jsmrk@gmail.com','09296651214','jmb','jsmrk123'),(13,'Employee','Baguio','Jess Mark','Alamban','Male','Sobrecary','jsmrk@gmail.com','0912341543','jmb','jsmrk123'),(14,'Admin','Bitte','Romart','Valorant','Male','Mawab','romart@gmail.com','09123123123','admin','admin123'),(15,'Employee','Bitte','Romart','Valorant','Male','Mawab','romartvalorant@gmail.com','09123123132','user','user1234');
 /*!40000 ALTER TABLE `tblusers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -277,6 +277,54 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `procInsertUser` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb3 */ ;
+/*!50003 SET character_set_results = utf8mb3 */ ;
+/*!50003 SET collation_connection  = utf8mb3_general_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'NO_AUTO_VALUE_ON_ZERO' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `procInsertUser`(p_userposition varchar(45),
+                                                        p_lastname varchar(45),
+                                                        p_firstname varchar(45),
+                                                        p_middlename varchar(45),
+                                                        p_gender varchar(6),
+                                                        p_address varchar(100),
+                                                        p_emailadd varchar(45),
+                                                        p_mobileno varchar(11),
+                                                        p_username varchar(45),
+                                                        p_userpassword varchar(45))
+BEGIN
+      insert into tblUsers(userposition,
+                              lastname,
+                              firstname,
+                              middlename,
+                              gender,
+                              address,
+                              emailadd,
+                              mobileno,
+                              username,
+                              userpassword)
+
+                  values( p_userposition,
+                         p_lastname,
+                         p_firstname,
+                         p_middlename,
+                         p_gender,
+                         p_address,
+                         p_emailadd,
+                         p_mobileno,
+                         p_username,
+                         p_userpassword);
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!50003 DROP PROCEDURE IF EXISTS `procSearchUser` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
@@ -306,4 +354,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-26 20:35:21
+-- Dump completed on 2024-05-26 21:12:15
