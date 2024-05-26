@@ -222,15 +222,18 @@ Public Class frmMain
 
     End Sub
 
+
     Private Sub btn_saveuser_Click(sender As Object, e As EventArgs) Handles btn_saveuser.Click
+        Dim isStrongPass As Boolean = CheckPasswordStrength(txtPassword.Text)
 
-        isStrongPass = CheckPasswordStrength(txtPassword.Text)
-
-        If txtPassword.Text = txtretypepassword.Text And isStrongPass Then
+        If txtPassword.Text = txtretypepassword.Text AndAlso isStrongPass Then
             Try
+                ' Hash the password using SHA-256
+                Dim hashedPassword As String = HashPassword(txtPassword.Text)
+
                 With command
-                    .Parameters.Clear() 'clear command parameters
-                    .CommandText = "ProcInsertUser" 'call stored procedure from mysql
+                    .Parameters.Clear() ' Clear command parameters
+                    .CommandText = "ProcInsertUser" ' Call stored procedure from MySQL
                     .CommandType = CommandType.StoredProcedure
                     .Parameters.AddWithValue("@p_userposition", cmbPosition.Text)
                     .Parameters.AddWithValue("@p_lastname", txtlastname.Text)
@@ -241,28 +244,27 @@ Public Class frmMain
                     .Parameters.AddWithValue("@p_emailadd", txtEmailAdd.Text)
                     .Parameters.AddWithValue("@p_mobileno", txtMobileNo.Text)
                     .Parameters.AddWithValue("@p_username", txtUsername.Text)
-                    .Parameters.AddWithValue("@p_userpassword", txtPassword.Text)
+                    .Parameters.AddWithValue("@p_userpassword", hashedPassword)
                     .ExecuteNonQuery()
                 End With
 
-                MessageBox.Show("Record Successfully Save", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Record Successfully Saved", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 pnl_AddUser.Visible = False
             Catch ex As Exception
-                MessageBox.Show("" + ex.Message)
+                MessageBox.Show(ex.Message)
             End Try
             procClearAddUser()
             procDisplayAllUsers()
-        ElseIf txtPassword.Text <> txtretypepassword.Text And isStrongPass Then
-            ' show not match err
+        ElseIf txtPassword.Text <> txtretypepassword.Text AndAlso isStrongPass Then
+            ' Show not match error
             MessageBox.Show("Password Not Match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        ElseIf Not isStrongPass And txtPassword.Text = txtretypepassword.Text Then
-            ' show pass str err
+        ElseIf Not isStrongPass AndAlso txtPassword.Text = txtretypepassword.Text Then
+            ' Show password strength error
             MessageBox.Show("Password Not Strong", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        ElseIf Not isStrongPass And txtPassword.Text <> txtretypepassword.Text Then
-            ' show two err
-            MessageBox.Show("Password Not Strong & Password dont match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        ElseIf Not isStrongPass AndAlso txtPassword.Text <> txtretypepassword.Text Then
+            ' Show both errors
+            MessageBox.Show("Password Not Strong & Password Don't Match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
-
     End Sub
 
 

@@ -1,5 +1,8 @@
-﻿Imports System.Text.RegularExpressions
+﻿Imports System.Security.Cryptography
+Imports System.Text
+Imports System.Text.RegularExpressions
 Imports MySql.Data.MySqlClient
+
 Module ModGlobalProcedure
     Public Function fncConnectToDatabase() As Boolean
         Try
@@ -41,12 +44,27 @@ Module ModGlobalProcedure
     End Sub
 
     Public Function CheckPasswordStrength(password As String) As Boolean
-        Dim regex As Regex
-        ' Check minimum length of 8 characters and combination of letters and numbers
-        regex = New Regex("^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$")
+        ' Check minimum length of 8 characters, at least 1 special character, at least 1 numeric character, and at least 1 uppercase letter
+        Dim regex As New Regex("^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$")
         If regex.IsMatch(password) Then
             Return True
         End If
         Return False
     End Function
+
+
+    Public Function HashPassword(password As String) As String
+        Using sha256 As SHA256 = SHA256.Create()
+            ' Compute the hash as a byte array
+            Dim bytes As Byte() = sha256.ComputeHash(Encoding.UTF8.GetBytes(password))
+
+            ' Convert the byte array to a hexadecimal string
+            Dim builder As New StringBuilder()
+            For Each b As Byte In bytes
+                builder.Append(b.ToString("x2"))
+            Next
+            Return builder.ToString()
+        End Using
+    End Function
+
 End Module

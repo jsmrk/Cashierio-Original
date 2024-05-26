@@ -1,4 +1,6 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Security.Cryptography
+Imports System.Text
+Imports MySql.Data.MySqlClient
 Public Class frmLogIn
     Dim currentuser As String
     Private Sub frmLogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -11,18 +13,22 @@ Public Class frmLogIn
         datRest = New DataTable
         SqlAdapterRest = New MySqlDataAdapter
 
+        Dim enteredPassword = txtPassword.Text
+        Dim HashedPass = HashPassword(enteredPassword)
+
         Try
             With command
                 .Parameters.Clear()
                 .CommandText = "procSearchUser"
                 .Parameters.AddWithValue("@p_userposition", Trim(cmbUserPosition.Text))
                 .Parameters.AddWithValue("@p_username", Trim(txtusername.Text))
-                .Parameters.AddWithValue("@p_userpassword", Trim(txtPassword.Text))
+                .Parameters.AddWithValue("@p_userpassword", HashedPass)
                 .CommandType = CommandType.StoredProcedure
                 SqlAdapterRest.SelectCommand = command
                 datRest.Clear()
                 SqlAdapterRest.Fill(datRest)
                 g_userposition = cmbUserPosition.Text
+
                 If datRest.Rows.Count > 0 Then
                     If g_userposition = "Admin" Then
                         currentuser = datRest.Rows(row).Item("fullname").ToString
@@ -61,10 +67,6 @@ Public Class frmLogIn
         Catch ex As Exception
             MessageBox.Show("" + ex.Message)
         End Try
-
-    End Sub
-
-    Private Sub cmbUser_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbUserPosition.SelectedIndexChanged
 
     End Sub
 
