@@ -1,0 +1,5 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `procSearchRecordsByDate`(p_fromdate varchar(50),
+                                                                      p_todate varchar(50))
+BEGIN
+   select * from tblSalesRecords where (datenow between p_fromdate AND p_todate);
+END
