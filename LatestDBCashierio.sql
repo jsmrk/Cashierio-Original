@@ -114,10 +114,10 @@ CREATE TABLE `tblusers` (
   `Address` varchar(100) NOT NULL,
   `Emailadd` varchar(45) NOT NULL,
   `mobileno` varchar(45) NOT NULL,
-  `Username` varchar(45) NOT NULL,
-  `UserPassword` varchar(45) NOT NULL,
+  `Username` varchar(500) NOT NULL,
+  `UserPassword` varchar(500) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -126,7 +126,7 @@ CREATE TABLE `tblusers` (
 
 LOCK TABLES `tblusers` WRITE;
 /*!40000 ALTER TABLE `tblusers` DISABLE KEYS */;
-INSERT INTO `tblusers` VALUES (7,'Admin','Baguio','Jess Mark','Alamban','Male','Secret','secret@gmail.com','09123456789','baguio','jsmrk12345'),(8,'Admin','Baguio','Jess Mark','Alamban','Male','Tagum City','jsmrk@gmail.com','09912345678','jsmrk12345','jsmrk1234'),(10,'Admin','Baguio','Jess Mark','Alamban','Male','qwerrty','qwerty@gmail.com','0936363636','jsmrk123','jsmrk12345'),(11,'Employee','Chatto','Reobert','Makilang','Male','Mawab','chattouwu@gmail.com','0912345567','chatto123','reobert123'),(12,'Admin','Baguio','Jess Mark','Alamban','Male','Sobrecary','jsmrk@gmail.com','09296651214','jmb','jsmrk123'),(13,'Employee','Baguio','Jess Mark','Alamban','Male','Sobrecary','jsmrk@gmail.com','0912341543','jmb','jsmrk123'),(14,'Admin','Bitte','Romart','Valorant','Male','Mawab','romart@gmail.com','09123123123','admin','admin123'),(15,'Employee','Bitte','Romart','Valorant','Male','Mawab','romartvalorant@gmail.com','09123123132','user','user1234');
+INSERT INTO `tblusers` VALUES (16,'Admin','Bitte','Romart','Valorant','Male','Mawab','romartvalorant@gmail.com','09123123132','admin','240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9'),(17,'Employee','Doncic','Kezia','Luca Luca','Male','Panabo World','lucaluca@gmail.com','42424242424242','user','e606e38b0d8c19b24cf0ee3808183162ea7cd63ff7912dbb22b5e803286b4446');
 /*!40000 ALTER TABLE `tblusers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -335,7 +335,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'NO_AUTO_VALUE_ON_ZERO' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `procSearchUser`(p_userposition varchar(45), p_username varchar(45),p_userpassword varchar(45))
+CREATE DEFINER=`root`@`localhost` PROCEDURE `procSearchUser`(p_userposition varchar(45), p_username varchar(45),p_userpassword varchar(500))
 BEGIN
  select concat(lastname,', ',firstname,' ',left(middlename,1),'. ') as fullname from tblusers where userposition=p_userposition and username=p_username and userpassword=p_userpassword;
 END ;;
@@ -354,4 +354,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-26 21:12:15
+-- Dump completed on 2024-05-26 21:50:50
