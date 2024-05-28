@@ -333,6 +333,15 @@
   <ItemGroup>
     <None Include="Resources\images\1234.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-clock-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_logs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_acc.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

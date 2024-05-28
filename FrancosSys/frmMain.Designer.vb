@@ -23,69 +23,54 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle45 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle46 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle47 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle48 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle57 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle58 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle59 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle54 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle55 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle56 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle60 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle65 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle66 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle67 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle61 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle62 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle63 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle64 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle68 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle69 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle74 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle75 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle76 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle70 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle71 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle72 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle73 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle77 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle78 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle83 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle84 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle85 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle79 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle80 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle81 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle82 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle86 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle87 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle88 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.pnl_accounts = New System.Windows.Forms.Panel()
-        Me.btnRestore = New System.Windows.Forms.Button()
-        Me.btnBackup = New System.Windows.Forms.Button()
-        Me.txtSearch = New System.Windows.Forms.TextBox()
-        Me.Label50 = New System.Windows.Forms.Label()
-        Me.dgUsers = New System.Windows.Forms.DataGridView()
-        Me.userID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userPosition = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userFullname = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userGender = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userAddress = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userEmail = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.userMobile = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btn_DeleteUser = New System.Windows.Forms.Button()
-        Me.btn_AddUser = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.lbltotalusers = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.pnl_AddUser = New System.Windows.Forms.Panel()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.cmbGender = New System.Windows.Forms.ComboBox()
@@ -115,11 +100,71 @@ Partial Class frmMain
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.btn_saveuser = New System.Windows.Forms.Button()
-        Me.pnlTop = New System.Windows.Forms.Panel()
-        Me.picMaximize = New System.Windows.Forms.PictureBox()
-        Me.picClose = New System.Windows.Forms.PictureBox()
+        Me.btnRestore = New System.Windows.Forms.Button()
+        Me.btnBackup = New System.Windows.Forms.Button()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.dgUsers = New System.Windows.Forms.DataGridView()
+        Me.userID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.userPosition = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.userFullname = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.userGender = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.userAddress = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.userEmail = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.userMobile = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btn_DeleteUser = New System.Windows.Forms.Button()
+        Me.btn_AddUser = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lbltotalusers = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.pnldeleteorder = New System.Windows.Forms.Panel()
+        Me.lblTypeOfDel = New System.Windows.Forms.Label()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtpass = New System.Windows.Forms.TextBox()
+        Me.pnl_logs = New System.Windows.Forms.Panel()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.pnl_dashboard = New System.Windows.Forms.Panel()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.lblmonthlysale = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.lbldailysale = New System.Windows.Forms.TextBox()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.lblyearlysale = New System.Windows.Forms.TextBox()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.dgNotif = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnl_sales = New System.Windows.Forms.Panel()
         Me.toDate = New System.Windows.Forms.DateTimePicker()
         Me.fromDate = New System.Windows.Forms.DateTimePicker()
@@ -148,6 +193,36 @@ Partial Class frmMain
         Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.pnl_inventory = New System.Windows.Forms.Panel()
+        Me.qtySearch = New System.Windows.Forms.TextBox()
+        Me.Label48 = New System.Windows.Forms.Label()
+        Me.pnl_additem = New System.Windows.Forms.Panel()
+        Me.lblitemDT = New System.Windows.Forms.Label()
+        Me.txtCost = New System.Windows.Forms.TextBox()
+        Me.txtPrice = New System.Windows.Forms.TextBox()
+        Me.txtStock = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblProductHeader = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtItemName = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnClearAddItem = New System.Windows.Forms.Button()
+        Me.btnAddProduct = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.txtsearchinventory = New System.Windows.Forms.TextBox()
+        Me.btnUpdateItem = New System.Windows.Forms.Button()
+        Me.btnDeleteItem = New System.Windows.Forms.Button()
+        Me.btnAddProd = New System.Windows.Forms.Button()
+        Me.dgInventory = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnl_cashier = New System.Windows.Forms.Panel()
         Me.txtCurrentUser = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
@@ -205,103 +280,29 @@ Partial Class frmMain
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
-        Me.pnldeleteorder = New System.Windows.Forms.Panel()
-        Me.lblTypeOfDel = New System.Windows.Forms.Label()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.txtpass = New System.Windows.Forms.TextBox()
-        Me.pnl_inventory = New System.Windows.Forms.Panel()
-        Me.qtySearch = New System.Windows.Forms.TextBox()
-        Me.Label48 = New System.Windows.Forms.Label()
-        Me.pnl_additem = New System.Windows.Forms.Panel()
-        Me.lblitemDT = New System.Windows.Forms.Label()
-        Me.txtCost = New System.Windows.Forms.TextBox()
-        Me.txtPrice = New System.Windows.Forms.TextBox()
-        Me.txtStock = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.lblProductHeader = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtItemName = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnClearAddItem = New System.Windows.Forms.Button()
-        Me.btnAddProduct = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.txtsearchinventory = New System.Windows.Forms.TextBox()
-        Me.btnUpdateItem = New System.Windows.Forms.Button()
-        Me.btnDeleteItem = New System.Windows.Forms.Button()
-        Me.btnAddProd = New System.Windows.Forms.Button()
-        Me.dgInventory = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.pnl_dashboard = New System.Windows.Forms.Panel()
-        Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.lblmonthlysale = New System.Windows.Forms.TextBox()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.lbldailysale = New System.Windows.Forms.TextBox()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.lblyearlysale = New System.Windows.Forms.TextBox()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.dgNotif = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.pnlTop = New System.Windows.Forms.Panel()
+        Me.picMaximize = New System.Windows.Forms.PictureBox()
+        Me.picClose = New System.Windows.Forms.PictureBox()
         Me.pnlSide = New System.Windows.Forms.Panel()
-        Me.btn_accounts = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.pnlOnButtonPosition = New System.Windows.Forms.Panel()
         Me.btn_logout = New System.Windows.Forms.Button()
+        Me.btn_accounts = New System.Windows.Forms.Button()
+        Me.pnlOnButtonPosition = New System.Windows.Forms.Panel()
+        Me.btn_logs = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_sales = New System.Windows.Forms.Button()
         Me.btn_inventory = New System.Windows.Forms.Button()
         Me.btn_cashier = New System.Windows.Forms.Button()
         Me.btn_dash = New System.Windows.Forms.Button()
         Me.pnl_accounts.SuspendLayout()
-        CType(Me.dgUsers, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_AddUser.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlTop.SuspendLayout()
-        CType(Me.picMaximize, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picClose, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_sales.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        CType(Me.dgsalesrecords, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_cashier.SuspendLayout()
-        CType(Me.dgSelectCashier, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
-        CType(Me.dgCashier, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlQTY.SuspendLayout()
-        Me.pnlReceipt.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgReceipt, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgUsers, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnldeleteorder.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnl_inventory.SuspendLayout()
-        Me.pnl_additem.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgInventory, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_logs.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_dashboard.SuspendLayout()
         Me.Panel14.SuspendLayout()
         Me.Panel10.SuspendLayout()
@@ -311,6 +312,29 @@ Partial Class frmMain
         Me.Panel11.SuspendLayout()
         Me.Panel12.SuspendLayout()
         CType(Me.dgNotif, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_sales.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        CType(Me.dgsalesrecords, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_inventory.SuspendLayout()
+        Me.pnl_additem.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgInventory, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnl_cashier.SuspendLayout()
+        CType(Me.dgSelectCashier, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.dgCashier, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlQTY.SuspendLayout()
+        Me.pnlReceipt.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgReceipt, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlTop.SuspendLayout()
+        CType(Me.picMaximize, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlSide.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -341,217 +365,6 @@ Partial Class frmMain
         Me.pnl_accounts.Name = "pnl_accounts"
         Me.pnl_accounts.Size = New System.Drawing.Size(1157, 780)
         Me.pnl_accounts.TabIndex = 0
-        '
-        'btnRestore
-        '
-        Me.btnRestore.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.btnRestore.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRestore.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btnRestore.FlatAppearance.BorderSize = 2
-        Me.btnRestore.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRestore.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnRestore.Image = CType(resources.GetObject("btnRestore.Image"), System.Drawing.Image)
-        Me.btnRestore.Location = New System.Drawing.Point(977, 96)
-        Me.btnRestore.Name = "btnRestore"
-        Me.btnRestore.Size = New System.Drawing.Size(149, 42)
-        Me.btnRestore.TabIndex = 77
-        Me.btnRestore.Text = "Restore"
-        Me.btnRestore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnRestore.UseVisualStyleBackColor = False
-        '
-        'btnBackup
-        '
-        Me.btnBackup.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.btnBackup.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBackup.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btnBackup.FlatAppearance.BorderSize = 2
-        Me.btnBackup.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBackup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnBackup.Image = CType(resources.GetObject("btnBackup.Image"), System.Drawing.Image)
-        Me.btnBackup.Location = New System.Drawing.Point(978, 42)
-        Me.btnBackup.Name = "btnBackup"
-        Me.btnBackup.Size = New System.Drawing.Size(148, 42)
-        Me.btnBackup.TabIndex = 22
-        Me.btnBackup.Text = "Back Up"
-        Me.btnBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnBackup.UseVisualStyleBackColor = False
-        '
-        'txtSearch
-        '
-        Me.txtSearch.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.Location = New System.Drawing.Point(160, 128)
-        Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(356, 37)
-        Me.txtSearch.TabIndex = 22
-        '
-        'Label50
-        '
-        Me.Label50.AutoSize = True
-        Me.Label50.BackColor = System.Drawing.Color.Transparent
-        Me.Label50.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label50.ForeColor = System.Drawing.Color.Black
-        Me.Label50.Location = New System.Drawing.Point(31, 124)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(133, 38)
-        Me.Label50.TabIndex = 76
-        Me.Label50.Text = "Search:"
-        '
-        'dgUsers
-        '
-        Me.dgUsers.AllowUserToDeleteRows = False
-        Me.dgUsers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgUsers.BackgroundColor = System.Drawing.Color.White
-        Me.dgUsers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgUsers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgUsers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.userID, Me.userPosition, Me.userFullname, Me.userGender, Me.userAddress, Me.userEmail, Me.userMobile, Me.Column7})
-        Me.dgUsers.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(3)
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgUsers.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgUsers.EnableHeadersVisualStyles = False
-        Me.dgUsers.Location = New System.Drawing.Point(38, 183)
-        Me.dgUsers.Name = "dgUsers"
-        Me.dgUsers.ReadOnly = True
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgUsers.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        Me.dgUsers.RowHeadersVisible = False
-        Me.dgUsers.Size = New System.Drawing.Size(1089, 538)
-        Me.dgUsers.TabIndex = 20
-        '
-        'userID
-        '
-        Me.userID.HeaderText = "ID"
-        Me.userID.Name = "userID"
-        Me.userID.ReadOnly = True
-        Me.userID.Width = 136
-        '
-        'userPosition
-        '
-        Me.userPosition.HeaderText = "POSITION"
-        Me.userPosition.Name = "userPosition"
-        Me.userPosition.ReadOnly = True
-        Me.userPosition.Width = 136
-        '
-        'userFullname
-        '
-        Me.userFullname.HeaderText = "FULLNAME"
-        Me.userFullname.Name = "userFullname"
-        Me.userFullname.ReadOnly = True
-        Me.userFullname.Width = 136
-        '
-        'userGender
-        '
-        Me.userGender.HeaderText = "GENDER"
-        Me.userGender.Name = "userGender"
-        Me.userGender.ReadOnly = True
-        Me.userGender.Width = 136
-        '
-        'userAddress
-        '
-        Me.userAddress.HeaderText = "ADDRESS"
-        Me.userAddress.Name = "userAddress"
-        Me.userAddress.ReadOnly = True
-        Me.userAddress.Width = 135
-        '
-        'userEmail
-        '
-        Me.userEmail.HeaderText = "EMAIL"
-        Me.userEmail.Name = "userEmail"
-        Me.userEmail.ReadOnly = True
-        Me.userEmail.Width = 136
-        '
-        'userMobile
-        '
-        Me.userMobile.HeaderText = "MOBILE"
-        Me.userMobile.Name = "userMobile"
-        Me.userMobile.ReadOnly = True
-        Me.userMobile.Width = 136
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "USERNAME"
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
-        Me.Column7.Width = 136
-        '
-        'btn_DeleteUser
-        '
-        Me.btn_DeleteUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.btn_DeleteUser.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_DeleteUser.ForeColor = System.Drawing.Color.Black
-        Me.btn_DeleteUser.Location = New System.Drawing.Point(659, 123)
-        Me.btn_DeleteUser.Name = "btn_DeleteUser"
-        Me.btn_DeleteUser.Size = New System.Drawing.Size(112, 45)
-        Me.btn_DeleteUser.TabIndex = 67
-        Me.btn_DeleteUser.Text = "DELETE"
-        Me.btn_DeleteUser.UseVisualStyleBackColor = False
-        '
-        'btn_AddUser
-        '
-        Me.btn_AddUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.btn_AddUser.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_AddUser.ForeColor = System.Drawing.Color.Black
-        Me.btn_AddUser.Location = New System.Drawing.Point(541, 123)
-        Me.btn_AddUser.Name = "btn_AddUser"
-        Me.btn_AddUser.Size = New System.Drawing.Size(112, 45)
-        Me.btn_AddUser.TabIndex = 66
-        Me.btn_AddUser.Text = "ADD"
-        Me.btn_AddUser.UseVisualStyleBackColor = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(37, 44)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(387, 56)
-        Me.Label7.TabIndex = 21
-        Me.Label7.Text = "MANAGE USERS"
-        '
-        'lbltotalusers
-        '
-        Me.lbltotalusers.AutoSize = True
-        Me.lbltotalusers.BackColor = System.Drawing.Color.Transparent
-        Me.lbltotalusers.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbltotalusers.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.lbltotalusers.Location = New System.Drawing.Point(904, 740)
-        Me.lbltotalusers.Name = "lbltotalusers"
-        Me.lbltotalusers.Size = New System.Drawing.Size(25, 28)
-        Me.lbltotalusers.TabIndex = 30
-        Me.lbltotalusers.Text = "0"
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox3.Location = New System.Drawing.Point(663, 229)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(18, 18)
-        Me.PictureBox3.TabIndex = 18
-        Me.PictureBox3.TabStop = False
         '
         'pnl_AddUser
         '
@@ -876,45 +689,770 @@ Partial Class frmMain
         Me.btn_saveuser.Text = "ADD"
         Me.btn_saveuser.UseVisualStyleBackColor = False
         '
-        'pnlTop
+        'btnRestore
         '
-        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.pnlTop.BackgroundImage = CType(resources.GetObject("pnlTop.BackgroundImage"), System.Drawing.Image)
-        Me.pnlTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pnlTop.Controls.Add(Me.picMaximize)
-        Me.pnlTop.Controls.Add(Me.picClose)
-        Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlTop.Location = New System.Drawing.Point(196, 0)
-        Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(1157, 35)
-        Me.pnlTop.TabIndex = 14
+        Me.btnRestore.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnRestore.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRestore.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnRestore.FlatAppearance.BorderSize = 2
+        Me.btnRestore.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRestore.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnRestore.Image = CType(resources.GetObject("btnRestore.Image"), System.Drawing.Image)
+        Me.btnRestore.Location = New System.Drawing.Point(977, 96)
+        Me.btnRestore.Name = "btnRestore"
+        Me.btnRestore.Size = New System.Drawing.Size(149, 42)
+        Me.btnRestore.TabIndex = 77
+        Me.btnRestore.Text = "Restore"
+        Me.btnRestore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnRestore.UseVisualStyleBackColor = False
         '
-        'picMaximize
+        'btnBackup
         '
-        Me.picMaximize.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picMaximize.BackgroundImage = CType(resources.GetObject("picMaximize.BackgroundImage"), System.Drawing.Image)
-        Me.picMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.picMaximize.Location = New System.Drawing.Point(1129, 7)
-        Me.picMaximize.Name = "picMaximize"
-        Me.picMaximize.Size = New System.Drawing.Size(18, 18)
-        Me.picMaximize.TabIndex = 17
-        Me.picMaximize.TabStop = False
+        Me.btnBackup.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnBackup.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBackup.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnBackup.FlatAppearance.BorderSize = 2
+        Me.btnBackup.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBackup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnBackup.Image = CType(resources.GetObject("btnBackup.Image"), System.Drawing.Image)
+        Me.btnBackup.Location = New System.Drawing.Point(978, 42)
+        Me.btnBackup.Name = "btnBackup"
+        Me.btnBackup.Size = New System.Drawing.Size(148, 42)
+        Me.btnBackup.TabIndex = 22
+        Me.btnBackup.Text = "Back Up"
+        Me.btnBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnBackup.UseVisualStyleBackColor = False
         '
-        'picClose
+        'txtSearch
         '
-        Me.picClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.picClose.BackgroundImage = CType(resources.GetObject("picClose.BackgroundImage"), System.Drawing.Image)
-        Me.picClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.picClose.Location = New System.Drawing.Point(1100, 7)
-        Me.picClose.Name = "picClose"
-        Me.picClose.Size = New System.Drawing.Size(18, 18)
-        Me.picClose.TabIndex = 15
-        Me.picClose.TabStop = False
+        Me.txtSearch.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearch.Location = New System.Drawing.Point(160, 128)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(356, 37)
+        Me.txtSearch.TabIndex = 22
+        '
+        'Label50
+        '
+        Me.Label50.AutoSize = True
+        Me.Label50.BackColor = System.Drawing.Color.Transparent
+        Me.Label50.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label50.ForeColor = System.Drawing.Color.Black
+        Me.Label50.Location = New System.Drawing.Point(31, 124)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(133, 38)
+        Me.Label50.TabIndex = 76
+        Me.Label50.Text = "Search:"
+        '
+        'dgUsers
+        '
+        Me.dgUsers.AllowUserToDeleteRows = False
+        Me.dgUsers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgUsers.BackgroundColor = System.Drawing.Color.White
+        Me.dgUsers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
+        DataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle45.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgUsers.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle45
+        Me.dgUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgUsers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.userID, Me.userPosition, Me.userFullname, Me.userGender, Me.userAddress, Me.userEmail, Me.userMobile, Me.Column7})
+        Me.dgUsers.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle46.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle46.Padding = New System.Windows.Forms.Padding(3)
+        DataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        DataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgUsers.DefaultCellStyle = DataGridViewCellStyle46
+        Me.dgUsers.EnableHeadersVisualStyles = False
+        Me.dgUsers.Location = New System.Drawing.Point(38, 183)
+        Me.dgUsers.Name = "dgUsers"
+        Me.dgUsers.ReadOnly = True
+        DataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle47.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgUsers.RowHeadersDefaultCellStyle = DataGridViewCellStyle47
+        Me.dgUsers.RowHeadersVisible = False
+        Me.dgUsers.Size = New System.Drawing.Size(1089, 538)
+        Me.dgUsers.TabIndex = 20
+        '
+        'userID
+        '
+        Me.userID.HeaderText = "ID"
+        Me.userID.Name = "userID"
+        Me.userID.ReadOnly = True
+        Me.userID.Width = 136
+        '
+        'userPosition
+        '
+        Me.userPosition.HeaderText = "POSITION"
+        Me.userPosition.Name = "userPosition"
+        Me.userPosition.ReadOnly = True
+        Me.userPosition.Width = 136
+        '
+        'userFullname
+        '
+        Me.userFullname.HeaderText = "FULLNAME"
+        Me.userFullname.Name = "userFullname"
+        Me.userFullname.ReadOnly = True
+        Me.userFullname.Width = 136
+        '
+        'userGender
+        '
+        Me.userGender.HeaderText = "GENDER"
+        Me.userGender.Name = "userGender"
+        Me.userGender.ReadOnly = True
+        Me.userGender.Width = 136
+        '
+        'userAddress
+        '
+        Me.userAddress.HeaderText = "ADDRESS"
+        Me.userAddress.Name = "userAddress"
+        Me.userAddress.ReadOnly = True
+        Me.userAddress.Width = 135
+        '
+        'userEmail
+        '
+        Me.userEmail.HeaderText = "EMAIL"
+        Me.userEmail.Name = "userEmail"
+        Me.userEmail.ReadOnly = True
+        Me.userEmail.Width = 136
+        '
+        'userMobile
+        '
+        Me.userMobile.HeaderText = "MOBILE"
+        Me.userMobile.Name = "userMobile"
+        Me.userMobile.ReadOnly = True
+        Me.userMobile.Width = 136
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "USERNAME"
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
+        Me.Column7.Width = 136
+        '
+        'btn_DeleteUser
+        '
+        Me.btn_DeleteUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btn_DeleteUser.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_DeleteUser.ForeColor = System.Drawing.Color.Black
+        Me.btn_DeleteUser.Location = New System.Drawing.Point(659, 123)
+        Me.btn_DeleteUser.Name = "btn_DeleteUser"
+        Me.btn_DeleteUser.Size = New System.Drawing.Size(112, 45)
+        Me.btn_DeleteUser.TabIndex = 67
+        Me.btn_DeleteUser.Text = "DELETE"
+        Me.btn_DeleteUser.UseVisualStyleBackColor = False
+        '
+        'btn_AddUser
+        '
+        Me.btn_AddUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btn_AddUser.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_AddUser.ForeColor = System.Drawing.Color.Black
+        Me.btn_AddUser.Location = New System.Drawing.Point(541, 123)
+        Me.btn_AddUser.Name = "btn_AddUser"
+        Me.btn_AddUser.Size = New System.Drawing.Size(112, 45)
+        Me.btn_AddUser.TabIndex = 66
+        Me.btn_AddUser.Text = "ADD"
+        Me.btn_AddUser.UseVisualStyleBackColor = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(37, 44)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(387, 56)
+        Me.Label7.TabIndex = 21
+        Me.Label7.Text = "MANAGE USERS"
+        '
+        'lbltotalusers
+        '
+        Me.lbltotalusers.AutoSize = True
+        Me.lbltotalusers.BackColor = System.Drawing.Color.Transparent
+        Me.lbltotalusers.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalusers.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.lbltotalusers.Location = New System.Drawing.Point(904, 740)
+        Me.lbltotalusers.Name = "lbltotalusers"
+        Me.lbltotalusers.Size = New System.Drawing.Size(25, 28)
+        Me.lbltotalusers.TabIndex = 30
+        Me.lbltotalusers.Text = "0"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox3.Location = New System.Drawing.Point(663, 229)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(18, 18)
+        Me.PictureBox3.TabIndex = 18
+        Me.PictureBox3.TabStop = False
         '
         'NotifyIcon1
         '
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
+        '
+        'pnldeleteorder
+        '
+        Me.pnldeleteorder.BackColor = System.Drawing.SystemColors.Control
+        Me.pnldeleteorder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnldeleteorder.Controls.Add(Me.lblTypeOfDel)
+        Me.pnldeleteorder.Controls.Add(Me.Label49)
+        Me.pnldeleteorder.Controls.Add(Me.PictureBox5)
+        Me.pnldeleteorder.Controls.Add(Me.Button1)
+        Me.pnldeleteorder.Controls.Add(Me.txtpass)
+        Me.pnldeleteorder.Location = New System.Drawing.Point(1017, 204)
+        Me.pnldeleteorder.Name = "pnldeleteorder"
+        Me.pnldeleteorder.Size = New System.Drawing.Size(263, 146)
+        Me.pnldeleteorder.TabIndex = 31
+        '
+        'lblTypeOfDel
+        '
+        Me.lblTypeOfDel.AutoSize = True
+        Me.lblTypeOfDel.BackColor = System.Drawing.Color.Transparent
+        Me.lblTypeOfDel.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTypeOfDel.ForeColor = System.Drawing.Color.Black
+        Me.lblTypeOfDel.Location = New System.Drawing.Point(13, 11)
+        Me.lblTypeOfDel.Name = "lblTypeOfDel"
+        Me.lblTypeOfDel.Size = New System.Drawing.Size(121, 19)
+        Me.lblTypeOfDel.TabIndex = 77
+        Me.lblTypeOfDel.Text = "CLEAR ORDER"
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.BackColor = System.Drawing.Color.Transparent
+        Me.Label49.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label49.ForeColor = System.Drawing.Color.Black
+        Me.Label49.Location = New System.Drawing.Point(14, 38)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(95, 20)
+        Me.Label49.TabIndex = 76
+        Me.Label49.Text = "PASSWORD:"
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox5.Location = New System.Drawing.Point(240, 3)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(18, 18)
+        Me.PictureBox5.TabIndex = 75
+        Me.PictureBox5.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(161, 98)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(80, 31)
+        Me.Button1.TabIndex = 74
+        Me.Button1.Text = "Confirm"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'txtpass
+        '
+        Me.txtpass.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtpass.Location = New System.Drawing.Point(18, 61)
+        Me.txtpass.Name = "txtpass"
+        Me.txtpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtpass.Size = New System.Drawing.Size(223, 28)
+        Me.txtpass.TabIndex = 73
+        '
+        'pnl_logs
+        '
+        Me.pnl_logs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pnl_logs.Controls.Add(Me.DateTimePicker1)
+        Me.pnl_logs.Controls.Add(Me.DateTimePicker2)
+        Me.pnl_logs.Controls.Add(Me.Button2)
+        Me.pnl_logs.Controls.Add(Me.Label51)
+        Me.pnl_logs.Controls.Add(Me.Label52)
+        Me.pnl_logs.Controls.Add(Me.TextBox10)
+        Me.pnl_logs.Controls.Add(Me.Label64)
+        Me.pnl_logs.Controls.Add(Me.DataGridView1)
+        Me.pnl_logs.Controls.Add(Me.Label65)
+        Me.pnl_logs.Controls.Add(Me.Label66)
+        Me.pnl_logs.Controls.Add(Me.PictureBox7)
+        Me.pnl_logs.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_logs.ImeMode = System.Windows.Forms.ImeMode.Off
+        Me.pnl_logs.Location = New System.Drawing.Point(196, 35)
+        Me.pnl_logs.Name = "pnl_logs"
+        Me.pnl_logs.Size = New System.Drawing.Size(1157, 780)
+        Me.pnl_logs.TabIndex = 92
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(763, 129)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(127, 27)
+        Me.DateTimePicker1.TabIndex = 96
+        Me.DateTimePicker1.Value = New Date(2023, 4, 23, 0, 0, 0, 0)
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.CalendarFont = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker2.Location = New System.Drawing.Point(604, 130)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(125, 27)
+        Me.DateTimePicker2.TabIndex = 95
+        Me.DateTimePicker2.Value = New Date(2023, 4, 23, 0, 0, 0, 0)
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Location = New System.Drawing.Point(909, 124)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(97, 39)
+        Me.Button2.TabIndex = 93
+        Me.Button2.Text = "SEARCH"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.BackColor = System.Drawing.Color.Transparent
+        Me.Label51.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label51.ForeColor = System.Drawing.Color.Black
+        Me.Label51.Location = New System.Drawing.Point(547, 133)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(57, 21)
+        Me.Label51.TabIndex = 92
+        Me.Label51.Text = "FROM"
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.BackColor = System.Drawing.Color.Transparent
+        Me.Label52.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.ForeColor = System.Drawing.Color.Black
+        Me.Label52.Location = New System.Drawing.Point(733, 132)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(32, 21)
+        Me.Label52.TabIndex = 91
+        Me.Label52.Text = "TO"
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox10.Location = New System.Drawing.Point(169, 124)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(356, 37)
+        Me.TextBox10.TabIndex = 22
+        '
+        'Label64
+        '
+        Me.Label64.AutoSize = True
+        Me.Label64.BackColor = System.Drawing.Color.Transparent
+        Me.Label64.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label64.ForeColor = System.Drawing.Color.Black
+        Me.Label64.Location = New System.Drawing.Point(31, 121)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(133, 38)
+        Me.Label64.TabIndex = 76
+        Me.Label64.Text = "Search:"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
+        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
+        DataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle48.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle48
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33})
+        Me.DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle49.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle49.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle49.Padding = New System.Windows.Forms.Padding(3)
+        DataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        DataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle49
+        Me.DataGridView1.EnableHeadersVisualStyles = False
+        Me.DataGridView1.Location = New System.Drawing.Point(38, 181)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        DataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle50.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle50.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle50
+        Me.DataGridView1.RowHeadersVisible = False
+        Me.DataGridView1.Size = New System.Drawing.Size(1089, 553)
+        Me.DataGridView1.TabIndex = 20
+        '
+        'DataGridViewTextBoxColumn26
+        '
+        Me.DataGridViewTextBoxColumn26.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn26.MinimumWidth = 67
+        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        Me.DataGridViewTextBoxColumn26.ReadOnly = True
+        Me.DataGridViewTextBoxColumn26.Width = 67
+        '
+        'DataGridViewTextBoxColumn27
+        '
+        Me.DataGridViewTextBoxColumn27.FillWeight = 200.0!
+        Me.DataGridViewTextBoxColumn27.HeaderText = "POSITION"
+        Me.DataGridViewTextBoxColumn27.MinimumWidth = 150
+        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
+        Me.DataGridViewTextBoxColumn27.ReadOnly = True
+        Me.DataGridViewTextBoxColumn27.Width = 150
+        '
+        'DataGridViewTextBoxColumn28
+        '
+        Me.DataGridViewTextBoxColumn28.FillWeight = 300.0!
+        Me.DataGridViewTextBoxColumn28.HeaderText = "FULLNAME"
+        Me.DataGridViewTextBoxColumn28.MinimumWidth = 300
+        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        Me.DataGridViewTextBoxColumn28.ReadOnly = True
+        Me.DataGridViewTextBoxColumn28.Width = 300
+        '
+        'DataGridViewTextBoxColumn32
+        '
+        Me.DataGridViewTextBoxColumn32.HeaderText = "ACTION"
+        Me.DataGridViewTextBoxColumn32.MinimumWidth = 370
+        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
+        Me.DataGridViewTextBoxColumn32.ReadOnly = True
+        Me.DataGridViewTextBoxColumn32.Width = 370
+        '
+        'DataGridViewTextBoxColumn33
+        '
+        Me.DataGridViewTextBoxColumn33.HeaderText = "DATE & TIME"
+        Me.DataGridViewTextBoxColumn33.MinimumWidth = 200
+        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
+        Me.DataGridViewTextBoxColumn33.ReadOnly = True
+        Me.DataGridViewTextBoxColumn33.Width = 200
+        '
+        'Label65
+        '
+        Me.Label65.AutoSize = True
+        Me.Label65.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label65.ForeColor = System.Drawing.Color.Black
+        Me.Label65.Location = New System.Drawing.Point(28, 29)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(528, 56)
+        Me.Label65.TabIndex = 21
+        Me.Label65.Text = "VIEW ACCOUNT LOGS"
+        '
+        'Label66
+        '
+        Me.Label66.AutoSize = True
+        Me.Label66.BackColor = System.Drawing.Color.Transparent
+        Me.Label66.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Label66.Location = New System.Drawing.Point(904, 740)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(25, 28)
+        Me.Label66.TabIndex = 30
+        Me.Label66.Text = "0"
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.BackgroundImage = CType(resources.GetObject("PictureBox7.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox7.Location = New System.Drawing.Point(663, 229)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(18, 18)
+        Me.PictureBox7.TabIndex = 18
+        Me.PictureBox7.TabStop = False
+        '
+        'pnl_dashboard
+        '
+        Me.pnl_dashboard.BackgroundImage = CType(resources.GetObject("pnl_dashboard.BackgroundImage"), System.Drawing.Image)
+        Me.pnl_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.pnl_dashboard.Controls.Add(Me.Panel14)
+        Me.pnl_dashboard.Controls.Add(Me.Panel13)
+        Me.pnl_dashboard.Controls.Add(Me.Panel15)
+        Me.pnl_dashboard.Controls.Add(Me.Label23)
+        Me.pnl_dashboard.Controls.Add(Me.Panel12)
+        Me.pnl_dashboard.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_dashboard.Location = New System.Drawing.Point(196, 35)
+        Me.pnl_dashboard.Name = "pnl_dashboard"
+        Me.pnl_dashboard.Size = New System.Drawing.Size(1157, 780)
+        Me.pnl_dashboard.TabIndex = 15
+        '
+        'Panel14
+        '
+        Me.Panel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Panel14.Controls.Add(Me.Panel10)
+        Me.Panel14.Controls.Add(Me.Label34)
+        Me.Panel14.Location = New System.Drawing.Point(414, 54)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(331, 260)
+        Me.Panel14.TabIndex = 3
+        '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel10.Controls.Add(Me.lblmonthlysale)
+        Me.Panel10.Location = New System.Drawing.Point(12, 43)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(306, 197)
+        Me.Panel10.TabIndex = 85
+        '
+        'lblmonthlysale
+        '
+        Me.lblmonthlysale.BackColor = System.Drawing.SystemColors.Control
+        Me.lblmonthlysale.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lblmonthlysale.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmonthlysale.Location = New System.Drawing.Point(9, 63)
+        Me.lblmonthlysale.Name = "lblmonthlysale"
+        Me.lblmonthlysale.ReadOnly = True
+        Me.lblmonthlysale.Size = New System.Drawing.Size(289, 79)
+        Me.lblmonthlysale.TabIndex = 89
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.BackColor = System.Drawing.Color.Transparent
+        Me.Label34.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.ForeColor = System.Drawing.Color.Black
+        Me.Label34.Location = New System.Drawing.Point(3, 2)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(166, 38)
+        Me.Label34.TabIndex = 84
+        Me.Label34.Text = "MONTHLY"
+        '
+        'Panel13
+        '
+        Me.Panel13.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Panel13.Controls.Add(Me.Panel9)
+        Me.Panel13.Controls.Add(Me.Label33)
+        Me.Panel13.Location = New System.Drawing.Point(51, 54)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(331, 260)
+        Me.Panel13.TabIndex = 3
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel9.Controls.Add(Me.lbldailysale)
+        Me.Panel9.Location = New System.Drawing.Point(10, 43)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(306, 197)
+        Me.Panel9.TabIndex = 84
+        '
+        'lbldailysale
+        '
+        Me.lbldailysale.BackColor = System.Drawing.SystemColors.Control
+        Me.lbldailysale.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lbldailysale.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbldailysale.Location = New System.Drawing.Point(12, 58)
+        Me.lbldailysale.Name = "lbldailysale"
+        Me.lbldailysale.ReadOnly = True
+        Me.lbldailysale.Size = New System.Drawing.Size(285, 79)
+        Me.lbldailysale.TabIndex = 87
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.BackColor = System.Drawing.Color.Transparent
+        Me.Label33.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.ForeColor = System.Drawing.Color.Black
+        Me.Label33.Location = New System.Drawing.Point(3, 2)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(106, 38)
+        Me.Label33.TabIndex = 83
+        Me.Label33.Text = "DAILY"
+        '
+        'Panel15
+        '
+        Me.Panel15.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Panel15.Controls.Add(Me.Panel11)
+        Me.Panel15.Controls.Add(Me.Label35)
+        Me.Panel15.Location = New System.Drawing.Point(775, 54)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(331, 260)
+        Me.Panel15.TabIndex = 2
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel11.Controls.Add(Me.lblyearlysale)
+        Me.Panel11.Location = New System.Drawing.Point(11, 43)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(306, 197)
+        Me.Panel11.TabIndex = 85
+        '
+        'lblyearlysale
+        '
+        Me.lblyearlysale.BackColor = System.Drawing.SystemColors.Control
+        Me.lblyearlysale.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lblyearlysale.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblyearlysale.Location = New System.Drawing.Point(3, 71)
+        Me.lblyearlysale.Name = "lblyearlysale"
+        Me.lblyearlysale.ReadOnly = True
+        Me.lblyearlysale.Size = New System.Drawing.Size(300, 79)
+        Me.lblyearlysale.TabIndex = 89
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.BackColor = System.Drawing.Color.Transparent
+        Me.Label35.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.ForeColor = System.Drawing.Color.Black
+        Me.Label35.Location = New System.Drawing.Point(4, 2)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(131, 38)
+        Me.Label35.TabIndex = 85
+        Me.Label35.Text = "YEARLY"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.BackColor = System.Drawing.Color.Transparent
+        Me.Label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label23.Font = New System.Drawing.Font("Century Gothic", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label23.Location = New System.Drawing.Point(40, 350)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(276, 41)
+        Me.Label23.TabIndex = 22
+        Me.Label23.Text = "NOTIFICATIONS"
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Panel12.Controls.Add(Me.dgNotif)
+        Me.Panel12.Location = New System.Drawing.Point(47, 397)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(1071, 360)
+        Me.Panel12.TabIndex = 0
+        '
+        'dgNotif
+        '
+        Me.dgNotif.AllowUserToAddRows = False
+        Me.dgNotif.AllowUserToDeleteRows = False
+        DataGridViewCellStyle51.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle51.ForeColor = System.Drawing.Color.Black
+        Me.dgNotif.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle51
+        Me.dgNotif.BackgroundColor = System.Drawing.Color.White
+        DataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle52.BackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle52.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle52.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgNotif.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle52
+        Me.dgNotif.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgNotif.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25})
+        DataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle57.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle57.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle57.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle57.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgNotif.DefaultCellStyle = DataGridViewCellStyle57
+        Me.dgNotif.Location = New System.Drawing.Point(14, 14)
+        Me.dgNotif.Name = "dgNotif"
+        Me.dgNotif.ReadOnly = True
+        DataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle58.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle58.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle58.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgNotif.RowHeadersDefaultCellStyle = DataGridViewCellStyle58
+        Me.dgNotif.RowHeadersVisible = False
+        DataGridViewCellStyle59.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgNotif.RowsDefaultCellStyle = DataGridViewCellStyle59
+        Me.dgNotif.Size = New System.Drawing.Size(1044, 335)
+        Me.dgNotif.TabIndex = 68
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        DataGridViewCellStyle53.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn20.DefaultCellStyle = DataGridViewCellStyle53
+        Me.DataGridViewTextBoxColumn20.Frozen = True
+        Me.DataGridViewTextBoxColumn20.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        Me.DataGridViewTextBoxColumn20.ReadOnly = True
+        Me.DataGridViewTextBoxColumn20.Width = 50
+        '
+        'DataGridViewTextBoxColumn21
+        '
+        DataGridViewCellStyle54.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn21.DefaultCellStyle = DataGridViewCellStyle54
+        Me.DataGridViewTextBoxColumn21.FillWeight = 200.0!
+        Me.DataGridViewTextBoxColumn21.Frozen = True
+        Me.DataGridViewTextBoxColumn21.HeaderText = "ITEM NAME"
+        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
+        Me.DataGridViewTextBoxColumn21.ReadOnly = True
+        Me.DataGridViewTextBoxColumn21.Width = 350
+        '
+        'DataGridViewTextBoxColumn22
+        '
+        DataGridViewCellStyle55.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn22.DefaultCellStyle = DataGridViewCellStyle55
+        Me.DataGridViewTextBoxColumn22.HeaderText = "STOCK"
+        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
+        Me.DataGridViewTextBoxColumn22.ReadOnly = True
+        Me.DataGridViewTextBoxColumn22.Width = 150
+        '
+        'DataGridViewTextBoxColumn23
+        '
+        Me.DataGridViewTextBoxColumn23.HeaderText = "COST"
+        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
+        Me.DataGridViewTextBoxColumn23.ReadOnly = True
+        Me.DataGridViewTextBoxColumn23.Width = 150
+        '
+        'DataGridViewTextBoxColumn24
+        '
+        DataGridViewCellStyle56.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn24.DefaultCellStyle = DataGridViewCellStyle56
+        Me.DataGridViewTextBoxColumn24.HeaderText = "PRICE"
+        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
+        Me.DataGridViewTextBoxColumn24.ReadOnly = True
+        Me.DataGridViewTextBoxColumn24.Width = 150
+        '
+        'DataGridViewTextBoxColumn25
+        '
+        Me.DataGridViewTextBoxColumn25.HeaderText = "LAST UPDATED"
+        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
+        Me.DataGridViewTextBoxColumn25.ReadOnly = True
+        Me.DataGridViewTextBoxColumn25.Width = 300
         '
         'pnl_sales
         '
@@ -1148,40 +1686,40 @@ Partial Class frmMain
         '
         Me.dgsalesrecords.AllowUserToAddRows = False
         Me.dgsalesrecords.AllowUserToDeleteRows = False
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgsalesrecords.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle60.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgsalesrecords.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle60
         Me.dgsalesrecords.BackgroundColor = System.Drawing.Color.White
         Me.dgsalesrecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgsalesrecords.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.Column3})
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgsalesrecords.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle65.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle65.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle65.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle65.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgsalesrecords.DefaultCellStyle = DataGridViewCellStyle65
         Me.dgsalesrecords.Location = New System.Drawing.Point(19, 71)
         Me.dgsalesrecords.Name = "dgsalesrecords"
         Me.dgsalesrecords.ReadOnly = True
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgsalesrecords.RowHeadersDefaultCellStyle = DataGridViewCellStyle10
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgsalesrecords.RowsDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle66.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle66.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle66.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle66.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle66.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgsalesrecords.RowHeadersDefaultCellStyle = DataGridViewCellStyle66
+        DataGridViewCellStyle67.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgsalesrecords.RowsDefaultCellStyle = DataGridViewCellStyle67
         Me.dgsalesrecords.Size = New System.Drawing.Size(789, 689)
         Me.dgsalesrecords.TabIndex = 68
         '
         'DataGridViewTextBoxColumn9
         '
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle61.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle61.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle61
         Me.DataGridViewTextBoxColumn9.Frozen = True
         Me.DataGridViewTextBoxColumn9.HeaderText = "ID"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
@@ -1190,8 +1728,8 @@ Partial Class frmMain
         '
         'DataGridViewTextBoxColumn10
         '
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle62.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle62
         Me.DataGridViewTextBoxColumn10.FillWeight = 200.0!
         Me.DataGridViewTextBoxColumn10.Frozen = True
         Me.DataGridViewTextBoxColumn10.HeaderText = "ITEM NAME"
@@ -1201,8 +1739,8 @@ Partial Class frmMain
         '
         'DataGridViewTextBoxColumn11
         '
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle63.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle63
         Me.DataGridViewTextBoxColumn11.Frozen = True
         Me.DataGridViewTextBoxColumn11.HeaderText = "QTY"
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
@@ -1219,8 +1757,8 @@ Partial Class frmMain
         '
         'DataGridViewTextBoxColumn13
         '
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn13.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle64.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn13.DefaultCellStyle = DataGridViewCellStyle64
         Me.DataGridViewTextBoxColumn13.Frozen = True
         Me.DataGridViewTextBoxColumn13.HeaderText = "TIME"
         Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
@@ -1240,6 +1778,375 @@ Partial Class frmMain
         Me.Column3.Name = "Column3"
         Me.Column3.ReadOnly = True
         Me.Column3.Width = 120
+        '
+        'pnl_inventory
+        '
+        Me.pnl_inventory.BackgroundImage = Global.FrancosSys.My.Resources.Resources.allback
+        Me.pnl_inventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pnl_inventory.Controls.Add(Me.qtySearch)
+        Me.pnl_inventory.Controls.Add(Me.Label48)
+        Me.pnl_inventory.Controls.Add(Me.pnl_additem)
+        Me.pnl_inventory.Controls.Add(Me.Label24)
+        Me.pnl_inventory.Controls.Add(Me.txtsearchinventory)
+        Me.pnl_inventory.Controls.Add(Me.btnUpdateItem)
+        Me.pnl_inventory.Controls.Add(Me.btnDeleteItem)
+        Me.pnl_inventory.Controls.Add(Me.btnAddProd)
+        Me.pnl_inventory.Controls.Add(Me.dgInventory)
+        Me.pnl_inventory.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_inventory.Location = New System.Drawing.Point(196, 35)
+        Me.pnl_inventory.Name = "pnl_inventory"
+        Me.pnl_inventory.Size = New System.Drawing.Size(1157, 780)
+        Me.pnl_inventory.TabIndex = 91
+        '
+        'qtySearch
+        '
+        Me.qtySearch.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.qtySearch.Location = New System.Drawing.Point(610, 22)
+        Me.qtySearch.Name = "qtySearch"
+        Me.qtySearch.Size = New System.Drawing.Size(57, 37)
+        Me.qtySearch.TabIndex = 78
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.BackColor = System.Drawing.Color.Transparent
+        Me.Label48.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label48.ForeColor = System.Drawing.Color.Black
+        Me.Label48.Location = New System.Drawing.Point(527, 20)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(86, 38)
+        Me.Label48.TabIndex = 77
+        Me.Label48.Text = "QTY:"
+        '
+        'pnl_additem
+        '
+        Me.pnl_additem.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.pnl_additem.BackgroundImage = CType(resources.GetObject("pnl_additem.BackgroundImage"), System.Drawing.Image)
+        Me.pnl_additem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnl_additem.Controls.Add(Me.lblitemDT)
+        Me.pnl_additem.Controls.Add(Me.txtCost)
+        Me.pnl_additem.Controls.Add(Me.txtPrice)
+        Me.pnl_additem.Controls.Add(Me.txtStock)
+        Me.pnl_additem.Controls.Add(Me.Label11)
+        Me.pnl_additem.Controls.Add(Me.Label10)
+        Me.pnl_additem.Controls.Add(Me.Label6)
+        Me.pnl_additem.Controls.Add(Me.lblProductHeader)
+        Me.pnl_additem.Controls.Add(Me.Label3)
+        Me.pnl_additem.Controls.Add(Me.txtItemName)
+        Me.pnl_additem.Controls.Add(Me.Label2)
+        Me.pnl_additem.Controls.Add(Me.btnClearAddItem)
+        Me.pnl_additem.Controls.Add(Me.btnAddProduct)
+        Me.pnl_additem.Controls.Add(Me.PictureBox1)
+        Me.pnl_additem.Location = New System.Drawing.Point(343, 165)
+        Me.pnl_additem.Name = "pnl_additem"
+        Me.pnl_additem.Size = New System.Drawing.Size(465, 440)
+        Me.pnl_additem.TabIndex = 74
+        '
+        'lblitemDT
+        '
+        Me.lblitemDT.AutoSize = True
+        Me.lblitemDT.BackColor = System.Drawing.Color.Transparent
+        Me.lblitemDT.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblitemDT.ForeColor = System.Drawing.Color.Black
+        Me.lblitemDT.Location = New System.Drawing.Point(168, 296)
+        Me.lblitemDT.Name = "lblitemDT"
+        Me.lblitemDT.Size = New System.Drawing.Size(101, 22)
+        Me.lblitemDT.TabIndex = 83
+        Me.lblitemDT.Text = "Date Time"
+        '
+        'txtCost
+        '
+        Me.txtCost.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCost.Location = New System.Drawing.Point(167, 200)
+        Me.txtCost.Name = "txtCost"
+        Me.txtCost.Size = New System.Drawing.Size(216, 31)
+        Me.txtCost.TabIndex = 82
+        '
+        'txtPrice
+        '
+        Me.txtPrice.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPrice.Location = New System.Drawing.Point(167, 245)
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.Size = New System.Drawing.Size(216, 31)
+        Me.txtPrice.TabIndex = 80
+        '
+        'txtStock
+        '
+        Me.txtStock.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtStock.Location = New System.Drawing.Point(167, 156)
+        Me.txtStock.Name = "txtStock"
+        Me.txtStock.Size = New System.Drawing.Size(216, 31)
+        Me.txtStock.TabIndex = 79
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(100, 297)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(62, 22)
+        Me.Label11.TabIndex = 78
+        Me.Label11.Text = "DATE:"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(94, 249)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(68, 22)
+        Me.Label10.TabIndex = 77
+        Me.Label10.Text = "PRICE:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(98, 206)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(64, 22)
+        Me.Label6.TabIndex = 76
+        Me.Label6.Text = "COST:"
+        '
+        'lblProductHeader
+        '
+        Me.lblProductHeader.AutoSize = True
+        Me.lblProductHeader.BackColor = System.Drawing.Color.Transparent
+        Me.lblProductHeader.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblProductHeader.Location = New System.Drawing.Point(20, 17)
+        Me.lblProductHeader.Name = "lblProductHeader"
+        Me.lblProductHeader.Size = New System.Drawing.Size(238, 38)
+        Me.lblProductHeader.TabIndex = 75
+        Me.lblProductHeader.Text = "ADD PRODUCT"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(87, 163)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(75, 22)
+        Me.Label3.TabIndex = 73
+        Me.Label3.Text = "STOCK:"
+        '
+        'txtItemName
+        '
+        Me.txtItemName.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtItemName.Location = New System.Drawing.Point(167, 110)
+        Me.txtItemName.Name = "txtItemName"
+        Me.txtItemName.Size = New System.Drawing.Size(216, 31)
+        Me.txtItemName.TabIndex = 72
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(90, 113)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(71, 22)
+        Me.Label2.TabIndex = 71
+        Me.Label2.Text = "NAME:"
+        '
+        'btnClearAddItem
+        '
+        Me.btnClearAddItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnClearAddItem.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClearAddItem.ForeColor = System.Drawing.Color.Black
+        Me.btnClearAddItem.Location = New System.Drawing.Point(220, 377)
+        Me.btnClearAddItem.Name = "btnClearAddItem"
+        Me.btnClearAddItem.Size = New System.Drawing.Size(112, 45)
+        Me.btnClearAddItem.TabIndex = 68
+        Me.btnClearAddItem.Text = "CLEAR"
+        Me.btnClearAddItem.UseVisualStyleBackColor = False
+        '
+        'btnAddProduct
+        '
+        Me.btnAddProduct.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnAddProduct.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddProduct.ForeColor = System.Drawing.Color.Black
+        Me.btnAddProduct.Location = New System.Drawing.Point(338, 377)
+        Me.btnAddProduct.Name = "btnAddProduct"
+        Me.btnAddProduct.Size = New System.Drawing.Size(112, 45)
+        Me.btnAddProduct.TabIndex = 65
+        Me.btnAddProduct.Text = "SAVE"
+        Me.btnAddProduct.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(442, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(18, 18)
+        Me.PictureBox1.TabIndex = 18
+        Me.PictureBox1.TabStop = False
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.BackColor = System.Drawing.Color.Transparent
+        Me.Label24.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.ForeColor = System.Drawing.Color.Black
+        Me.Label24.Location = New System.Drawing.Point(25, 18)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(133, 38)
+        Me.Label24.TabIndex = 75
+        Me.Label24.Text = "Search:"
+        '
+        'txtsearchinventory
+        '
+        Me.txtsearchinventory.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtsearchinventory.Location = New System.Drawing.Point(154, 21)
+        Me.txtsearchinventory.Name = "txtsearchinventory"
+        Me.txtsearchinventory.Size = New System.Drawing.Size(361, 37)
+        Me.txtsearchinventory.TabIndex = 76
+        '
+        'btnUpdateItem
+        '
+        Me.btnUpdateItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnUpdateItem.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdateItem.ForeColor = System.Drawing.Color.Black
+        Me.btnUpdateItem.Location = New System.Drawing.Point(930, 13)
+        Me.btnUpdateItem.Name = "btnUpdateItem"
+        Me.btnUpdateItem.Size = New System.Drawing.Size(97, 49)
+        Me.btnUpdateItem.TabIndex = 73
+        Me.btnUpdateItem.Text = "UPDATE"
+        Me.btnUpdateItem.UseVisualStyleBackColor = False
+        '
+        'btnDeleteItem
+        '
+        Me.btnDeleteItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnDeleteItem.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDeleteItem.ForeColor = System.Drawing.Color.Black
+        Me.btnDeleteItem.Location = New System.Drawing.Point(825, 13)
+        Me.btnDeleteItem.Name = "btnDeleteItem"
+        Me.btnDeleteItem.Size = New System.Drawing.Size(97, 49)
+        Me.btnDeleteItem.TabIndex = 72
+        Me.btnDeleteItem.Text = "DELETE"
+        Me.btnDeleteItem.UseVisualStyleBackColor = False
+        '
+        'btnAddProd
+        '
+        Me.btnAddProd.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnAddProd.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddProd.ForeColor = System.Drawing.Color.Black
+        Me.btnAddProd.Location = New System.Drawing.Point(1036, 12)
+        Me.btnAddProd.Name = "btnAddProd"
+        Me.btnAddProd.Size = New System.Drawing.Size(97, 49)
+        Me.btnAddProd.TabIndex = 71
+        Me.btnAddProd.Text = "ADD"
+        Me.btnAddProd.UseVisualStyleBackColor = False
+        '
+        'dgInventory
+        '
+        Me.dgInventory.AllowUserToAddRows = False
+        Me.dgInventory.AllowUserToDeleteRows = False
+        DataGridViewCellStyle68.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgInventory.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle68
+        Me.dgInventory.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgInventory.BackgroundColor = System.Drawing.Color.White
+        Me.dgInventory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
+        DataGridViewCellStyle69.BackColor = System.Drawing.Color.Silver
+        DataGridViewCellStyle69.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle69.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle69.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle69.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle69.SelectionForeColor = System.Drawing.Color.Black
+        Me.dgInventory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle69
+        Me.dgInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgInventory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn8, Me.Column2, Me.DataGridViewTextBoxColumn7, Me.Column1})
+        DataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle74.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle74.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle74.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle74.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle74.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle74.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle74.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgInventory.DefaultCellStyle = DataGridViewCellStyle74
+        Me.dgInventory.Location = New System.Drawing.Point(22, 71)
+        Me.dgInventory.Name = "dgInventory"
+        Me.dgInventory.ReadOnly = True
+        DataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle75.BackColor = System.Drawing.Color.DarkGray
+        DataGridViewCellStyle75.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle75.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle75.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle75.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        DataGridViewCellStyle75.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgInventory.RowHeadersDefaultCellStyle = DataGridViewCellStyle75
+        Me.dgInventory.RowHeadersVisible = False
+        DataGridViewCellStyle76.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle76.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle76.Padding = New System.Windows.Forms.Padding(3)
+        DataGridViewCellStyle76.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle76.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle76.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgInventory.RowsDefaultCellStyle = DataGridViewCellStyle76
+        Me.dgInventory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgInventory.Size = New System.Drawing.Size(1114, 689)
+        Me.dgInventory.TabIndex = 67
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        DataGridViewCellStyle70.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle70.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle70
+        Me.DataGridViewTextBoxColumn5.Frozen = True
+        Me.DataGridViewTextBoxColumn5.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        Me.DataGridViewTextBoxColumn5.Width = 50
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        DataGridViewCellStyle71.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle71
+        Me.DataGridViewTextBoxColumn6.FillWeight = 200.0!
+        Me.DataGridViewTextBoxColumn6.Frozen = True
+        Me.DataGridViewTextBoxColumn6.HeaderText = "ITEM NAME"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        Me.DataGridViewTextBoxColumn6.Width = 350
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        DataGridViewCellStyle72.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle72
+        Me.DataGridViewTextBoxColumn8.HeaderText = "STOCK"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Width = 150
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "COST"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 150
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        DataGridViewCellStyle73.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle73
+        Me.DataGridViewTextBoxColumn7.HeaderText = "PRICE"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        Me.DataGridViewTextBoxColumn7.Width = 150
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "LAST UPDATED"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 300
         '
         'pnl_cashier
         '
@@ -1303,51 +2210,51 @@ Partial Class frmMain
         'dgSelectCashier
         '
         Me.dgSelectCashier.AllowUserToOrderColumns = True
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgSelectCashier.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle77.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgSelectCashier.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle77
         Me.dgSelectCashier.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgSelectCashier.BackgroundColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.ControlDark
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle13.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgSelectCashier.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle78.BackColor = System.Drawing.SystemColors.ControlDark
+        DataGridViewCellStyle78.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle78.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle78.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle78.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle78.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle78.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSelectCashier.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle78
         Me.dgSelectCashier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgSelectCashier.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle18.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle18.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgSelectCashier.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle83.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle83.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle83.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle83.Padding = New System.Windows.Forms.Padding(5)
+        DataGridViewCellStyle83.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle83.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle83.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgSelectCashier.DefaultCellStyle = DataGridViewCellStyle83
         Me.dgSelectCashier.Location = New System.Drawing.Point(19, 71)
         Me.dgSelectCashier.Name = "dgSelectCashier"
-        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle19.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgSelectCashier.RowHeadersDefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle84.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle84.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle84.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle84.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle84.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle84.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgSelectCashier.RowHeadersDefaultCellStyle = DataGridViewCellStyle84
         Me.dgSelectCashier.RowHeadersVisible = False
-        DataGridViewCellStyle20.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgSelectCashier.RowsDefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle85.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgSelectCashier.RowsDefaultCellStyle = DataGridViewCellStyle85
         Me.dgSelectCashier.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgSelectCashier.Size = New System.Drawing.Size(713, 697)
         Me.dgSelectCashier.TabIndex = 66
         '
         'DataGridViewTextBoxColumn1
         '
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle79.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle79
         Me.DataGridViewTextBoxColumn1.Frozen = True
         Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
@@ -1355,8 +2262,8 @@ Partial Class frmMain
         '
         'DataGridViewTextBoxColumn2
         '
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle80.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle80
         Me.DataGridViewTextBoxColumn2.Frozen = True
         Me.DataGridViewTextBoxColumn2.HeaderText = "ITEM"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
@@ -1364,8 +2271,8 @@ Partial Class frmMain
         '
         'DataGridViewTextBoxColumn3
         '
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle81.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle81
         Me.DataGridViewTextBoxColumn3.Frozen = True
         Me.DataGridViewTextBoxColumn3.HeaderText = "PRICE"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
@@ -1373,8 +2280,8 @@ Partial Class frmMain
         '
         'DataGridViewTextBoxColumn4
         '
-        DataGridViewCellStyle17.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle82.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle82
         Me.DataGridViewTextBoxColumn4.Frozen = True
         Me.DataGridViewTextBoxColumn4.HeaderText = "STOCK"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
@@ -1451,24 +2358,24 @@ Partial Class frmMain
         Me.dgCashier.AllowUserToAddRows = False
         Me.dgCashier.AllowUserToDeleteRows = False
         Me.dgCashier.BackgroundColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle21.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgCashier.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle21
+        DataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle86.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle86.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle86.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle86.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle86.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle86.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgCashier.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle86
         Me.dgCashier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgCashier.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.QTY, Me.ORDER, Me.price, Me.timep, Me.datep})
-        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle22.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgCashier.DefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle87.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle87.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle87.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle87.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle87.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        DataGridViewCellStyle87.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle87.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgCashier.DefaultCellStyle = DataGridViewCellStyle87
         Me.dgCashier.Location = New System.Drawing.Point(18, 54)
         Me.dgCashier.Name = "dgCashier"
         Me.dgCashier.ReadOnly = True
@@ -1807,14 +2714,14 @@ Partial Class frmMain
         Me.dgReceipt.AllowUserToAddRows = False
         Me.dgReceipt.AllowUserToDeleteRows = False
         Me.dgReceipt.BackgroundColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle23.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgReceipt.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle88.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle88.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle88.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle88.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle88.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle88.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgReceipt.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle88
         Me.dgReceipt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgReceipt.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19})
         Me.dgReceipt.Location = New System.Drawing.Point(16, 181)
@@ -1930,715 +2837,51 @@ Partial Class frmMain
         Me.Label36.TabIndex = 32
         Me.Label36.Text = "Alecas Collection"
         '
-        'pnldeleteorder
-        '
-        Me.pnldeleteorder.BackColor = System.Drawing.SystemColors.Control
-        Me.pnldeleteorder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pnldeleteorder.Controls.Add(Me.lblTypeOfDel)
-        Me.pnldeleteorder.Controls.Add(Me.Label49)
-        Me.pnldeleteorder.Controls.Add(Me.PictureBox5)
-        Me.pnldeleteorder.Controls.Add(Me.Button1)
-        Me.pnldeleteorder.Controls.Add(Me.txtpass)
-        Me.pnldeleteorder.Location = New System.Drawing.Point(1017, 204)
-        Me.pnldeleteorder.Name = "pnldeleteorder"
-        Me.pnldeleteorder.Size = New System.Drawing.Size(263, 146)
-        Me.pnldeleteorder.TabIndex = 31
-        '
-        'lblTypeOfDel
-        '
-        Me.lblTypeOfDel.AutoSize = True
-        Me.lblTypeOfDel.BackColor = System.Drawing.Color.Transparent
-        Me.lblTypeOfDel.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTypeOfDel.ForeColor = System.Drawing.Color.Black
-        Me.lblTypeOfDel.Location = New System.Drawing.Point(13, 11)
-        Me.lblTypeOfDel.Name = "lblTypeOfDel"
-        Me.lblTypeOfDel.Size = New System.Drawing.Size(121, 19)
-        Me.lblTypeOfDel.TabIndex = 77
-        Me.lblTypeOfDel.Text = "CLEAR ORDER"
-        '
-        'Label49
-        '
-        Me.Label49.AutoSize = True
-        Me.Label49.BackColor = System.Drawing.Color.Transparent
-        Me.Label49.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label49.ForeColor = System.Drawing.Color.Black
-        Me.Label49.Location = New System.Drawing.Point(14, 38)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(95, 20)
-        Me.Label49.TabIndex = 76
-        Me.Label49.Text = "PASSWORD:"
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox5.Location = New System.Drawing.Point(240, 3)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(18, 18)
-        Me.PictureBox5.TabIndex = 75
-        Me.PictureBox5.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(161, 98)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 31)
-        Me.Button1.TabIndex = 74
-        Me.Button1.Text = "Confirm"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'txtpass
-        '
-        Me.txtpass.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtpass.Location = New System.Drawing.Point(18, 61)
-        Me.txtpass.Name = "txtpass"
-        Me.txtpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtpass.Size = New System.Drawing.Size(223, 28)
-        Me.txtpass.TabIndex = 73
-        '
-        'pnl_inventory
-        '
-        Me.pnl_inventory.BackgroundImage = Global.FrancosSys.My.Resources.Resources.allback
-        Me.pnl_inventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pnl_inventory.Controls.Add(Me.qtySearch)
-        Me.pnl_inventory.Controls.Add(Me.Label48)
-        Me.pnl_inventory.Controls.Add(Me.pnl_additem)
-        Me.pnl_inventory.Controls.Add(Me.Label24)
-        Me.pnl_inventory.Controls.Add(Me.txtsearchinventory)
-        Me.pnl_inventory.Controls.Add(Me.btnUpdateItem)
-        Me.pnl_inventory.Controls.Add(Me.btnDeleteItem)
-        Me.pnl_inventory.Controls.Add(Me.btnAddProd)
-        Me.pnl_inventory.Controls.Add(Me.dgInventory)
-        Me.pnl_inventory.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_inventory.Location = New System.Drawing.Point(196, 35)
-        Me.pnl_inventory.Name = "pnl_inventory"
-        Me.pnl_inventory.Size = New System.Drawing.Size(1157, 780)
-        Me.pnl_inventory.TabIndex = 91
-        '
-        'qtySearch
-        '
-        Me.qtySearch.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.qtySearch.Location = New System.Drawing.Point(610, 22)
-        Me.qtySearch.Name = "qtySearch"
-        Me.qtySearch.Size = New System.Drawing.Size(57, 37)
-        Me.qtySearch.TabIndex = 78
-        '
-        'Label48
-        '
-        Me.Label48.AutoSize = True
-        Me.Label48.BackColor = System.Drawing.Color.Transparent
-        Me.Label48.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label48.ForeColor = System.Drawing.Color.Black
-        Me.Label48.Location = New System.Drawing.Point(527, 20)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(86, 38)
-        Me.Label48.TabIndex = 77
-        Me.Label48.Text = "QTY:"
-        '
-        'pnl_additem
-        '
-        Me.pnl_additem.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.pnl_additem.BackgroundImage = CType(resources.GetObject("pnl_additem.BackgroundImage"), System.Drawing.Image)
-        Me.pnl_additem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pnl_additem.Controls.Add(Me.lblitemDT)
-        Me.pnl_additem.Controls.Add(Me.txtCost)
-        Me.pnl_additem.Controls.Add(Me.txtPrice)
-        Me.pnl_additem.Controls.Add(Me.txtStock)
-        Me.pnl_additem.Controls.Add(Me.Label11)
-        Me.pnl_additem.Controls.Add(Me.Label10)
-        Me.pnl_additem.Controls.Add(Me.Label6)
-        Me.pnl_additem.Controls.Add(Me.lblProductHeader)
-        Me.pnl_additem.Controls.Add(Me.Label3)
-        Me.pnl_additem.Controls.Add(Me.txtItemName)
-        Me.pnl_additem.Controls.Add(Me.Label2)
-        Me.pnl_additem.Controls.Add(Me.btnClearAddItem)
-        Me.pnl_additem.Controls.Add(Me.btnAddProduct)
-        Me.pnl_additem.Controls.Add(Me.PictureBox1)
-        Me.pnl_additem.Location = New System.Drawing.Point(343, 165)
-        Me.pnl_additem.Name = "pnl_additem"
-        Me.pnl_additem.Size = New System.Drawing.Size(465, 440)
-        Me.pnl_additem.TabIndex = 74
-        '
-        'lblitemDT
-        '
-        Me.lblitemDT.AutoSize = True
-        Me.lblitemDT.BackColor = System.Drawing.Color.Transparent
-        Me.lblitemDT.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblitemDT.ForeColor = System.Drawing.Color.Black
-        Me.lblitemDT.Location = New System.Drawing.Point(168, 296)
-        Me.lblitemDT.Name = "lblitemDT"
-        Me.lblitemDT.Size = New System.Drawing.Size(101, 22)
-        Me.lblitemDT.TabIndex = 83
-        Me.lblitemDT.Text = "Date Time"
-        '
-        'txtCost
-        '
-        Me.txtCost.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCost.Location = New System.Drawing.Point(167, 200)
-        Me.txtCost.Name = "txtCost"
-        Me.txtCost.Size = New System.Drawing.Size(216, 31)
-        Me.txtCost.TabIndex = 82
-        '
-        'txtPrice
-        '
-        Me.txtPrice.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPrice.Location = New System.Drawing.Point(167, 245)
-        Me.txtPrice.Name = "txtPrice"
-        Me.txtPrice.Size = New System.Drawing.Size(216, 31)
-        Me.txtPrice.TabIndex = 80
-        '
-        'txtStock
-        '
-        Me.txtStock.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtStock.Location = New System.Drawing.Point(167, 156)
-        Me.txtStock.Name = "txtStock"
-        Me.txtStock.Size = New System.Drawing.Size(216, 31)
-        Me.txtStock.TabIndex = 79
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(100, 297)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(62, 22)
-        Me.Label11.TabIndex = 78
-        Me.Label11.Text = "DATE:"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(94, 249)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(68, 22)
-        Me.Label10.TabIndex = 77
-        Me.Label10.Text = "PRICE:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(98, 206)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 22)
-        Me.Label6.TabIndex = 76
-        Me.Label6.Text = "COST:"
-        '
-        'lblProductHeader
-        '
-        Me.lblProductHeader.AutoSize = True
-        Me.lblProductHeader.BackColor = System.Drawing.Color.Transparent
-        Me.lblProductHeader.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProductHeader.Location = New System.Drawing.Point(20, 17)
-        Me.lblProductHeader.Name = "lblProductHeader"
-        Me.lblProductHeader.Size = New System.Drawing.Size(238, 38)
-        Me.lblProductHeader.TabIndex = 75
-        Me.lblProductHeader.Text = "ADD PRODUCT"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(87, 163)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(75, 22)
-        Me.Label3.TabIndex = 73
-        Me.Label3.Text = "STOCK:"
-        '
-        'txtItemName
-        '
-        Me.txtItemName.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtItemName.Location = New System.Drawing.Point(167, 110)
-        Me.txtItemName.Name = "txtItemName"
-        Me.txtItemName.Size = New System.Drawing.Size(216, 31)
-        Me.txtItemName.TabIndex = 72
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(90, 113)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 22)
-        Me.Label2.TabIndex = 71
-        Me.Label2.Text = "NAME:"
-        '
-        'btnClearAddItem
-        '
-        Me.btnClearAddItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.btnClearAddItem.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClearAddItem.ForeColor = System.Drawing.Color.Black
-        Me.btnClearAddItem.Location = New System.Drawing.Point(220, 377)
-        Me.btnClearAddItem.Name = "btnClearAddItem"
-        Me.btnClearAddItem.Size = New System.Drawing.Size(112, 45)
-        Me.btnClearAddItem.TabIndex = 68
-        Me.btnClearAddItem.Text = "CLEAR"
-        Me.btnClearAddItem.UseVisualStyleBackColor = False
-        '
-        'btnAddProduct
-        '
-        Me.btnAddProduct.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.btnAddProduct.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddProduct.ForeColor = System.Drawing.Color.Black
-        Me.btnAddProduct.Location = New System.Drawing.Point(338, 377)
-        Me.btnAddProduct.Name = "btnAddProduct"
-        Me.btnAddProduct.Size = New System.Drawing.Size(112, 45)
-        Me.btnAddProduct.TabIndex = 65
-        Me.btnAddProduct.Text = "SAVE"
-        Me.btnAddProduct.UseVisualStyleBackColor = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(442, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(18, 18)
-        Me.PictureBox1.TabIndex = 18
-        Me.PictureBox1.TabStop = False
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.BackColor = System.Drawing.Color.Transparent
-        Me.Label24.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.ForeColor = System.Drawing.Color.Black
-        Me.Label24.Location = New System.Drawing.Point(25, 18)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(133, 38)
-        Me.Label24.TabIndex = 75
-        Me.Label24.Text = "Search:"
-        '
-        'txtsearchinventory
-        '
-        Me.txtsearchinventory.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtsearchinventory.Location = New System.Drawing.Point(154, 21)
-        Me.txtsearchinventory.Name = "txtsearchinventory"
-        Me.txtsearchinventory.Size = New System.Drawing.Size(361, 37)
-        Me.txtsearchinventory.TabIndex = 76
-        '
-        'btnUpdateItem
-        '
-        Me.btnUpdateItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.btnUpdateItem.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUpdateItem.ForeColor = System.Drawing.Color.Black
-        Me.btnUpdateItem.Location = New System.Drawing.Point(930, 13)
-        Me.btnUpdateItem.Name = "btnUpdateItem"
-        Me.btnUpdateItem.Size = New System.Drawing.Size(97, 49)
-        Me.btnUpdateItem.TabIndex = 73
-        Me.btnUpdateItem.Text = "UPDATE"
-        Me.btnUpdateItem.UseVisualStyleBackColor = False
-        '
-        'btnDeleteItem
-        '
-        Me.btnDeleteItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.btnDeleteItem.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDeleteItem.ForeColor = System.Drawing.Color.Black
-        Me.btnDeleteItem.Location = New System.Drawing.Point(825, 13)
-        Me.btnDeleteItem.Name = "btnDeleteItem"
-        Me.btnDeleteItem.Size = New System.Drawing.Size(97, 49)
-        Me.btnDeleteItem.TabIndex = 72
-        Me.btnDeleteItem.Text = "DELETE"
-        Me.btnDeleteItem.UseVisualStyleBackColor = False
-        '
-        'btnAddProd
-        '
-        Me.btnAddProd.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.btnAddProd.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddProd.ForeColor = System.Drawing.Color.Black
-        Me.btnAddProd.Location = New System.Drawing.Point(1036, 12)
-        Me.btnAddProd.Name = "btnAddProd"
-        Me.btnAddProd.Size = New System.Drawing.Size(97, 49)
-        Me.btnAddProd.TabIndex = 71
-        Me.btnAddProd.Text = "ADD"
-        Me.btnAddProd.UseVisualStyleBackColor = False
-        '
-        'dgInventory
-        '
-        Me.dgInventory.AllowUserToAddRows = False
-        Me.dgInventory.AllowUserToDeleteRows = False
-        DataGridViewCellStyle24.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgInventory.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle24
-        Me.dgInventory.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgInventory.BackgroundColor = System.Drawing.Color.White
-        Me.dgInventory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
-        DataGridViewCellStyle25.BackColor = System.Drawing.Color.Silver
-        DataGridViewCellStyle25.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle25.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Black
-        Me.dgInventory.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle25
-        Me.dgInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgInventory.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn8, Me.Column2, Me.DataGridViewTextBoxColumn7, Me.Column1})
-        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle30.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle30.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle30.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgInventory.DefaultCellStyle = DataGridViewCellStyle30
-        Me.dgInventory.Location = New System.Drawing.Point(22, 71)
-        Me.dgInventory.Name = "dgInventory"
-        Me.dgInventory.ReadOnly = True
-        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle31.BackColor = System.Drawing.Color.DarkGray
-        DataGridViewCellStyle31.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        DataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgInventory.RowHeadersDefaultCellStyle = DataGridViewCellStyle31
-        Me.dgInventory.RowHeadersVisible = False
-        DataGridViewCellStyle32.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle32.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle32.Padding = New System.Windows.Forms.Padding(3)
-        DataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgInventory.RowsDefaultCellStyle = DataGridViewCellStyle32
-        Me.dgInventory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgInventory.Size = New System.Drawing.Size(1114, 689)
-        Me.dgInventory.TabIndex = 67
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        DataGridViewCellStyle26.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle26
-        Me.DataGridViewTextBoxColumn5.Frozen = True
-        Me.DataGridViewTextBoxColumn5.HeaderText = "ID"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.ReadOnly = True
-        Me.DataGridViewTextBoxColumn5.Width = 50
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        DataGridViewCellStyle27.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle27
-        Me.DataGridViewTextBoxColumn6.FillWeight = 200.0!
-        Me.DataGridViewTextBoxColumn6.Frozen = True
-        Me.DataGridViewTextBoxColumn6.HeaderText = "ITEM NAME"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        Me.DataGridViewTextBoxColumn6.Width = 350
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        DataGridViewCellStyle28.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle28
-        Me.DataGridViewTextBoxColumn8.HeaderText = "STOCK"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.ReadOnly = True
-        Me.DataGridViewTextBoxColumn8.Width = 150
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "COST"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Width = 150
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        DataGridViewCellStyle29.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle29
-        Me.DataGridViewTextBoxColumn7.HeaderText = "PRICE"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.ReadOnly = True
-        Me.DataGridViewTextBoxColumn7.Width = 150
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "LAST UPDATED"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 300
-        '
-        'pnl_dashboard
-        '
-        Me.pnl_dashboard.BackgroundImage = CType(resources.GetObject("pnl_dashboard.BackgroundImage"), System.Drawing.Image)
-        Me.pnl_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pnl_dashboard.Controls.Add(Me.Panel14)
-        Me.pnl_dashboard.Controls.Add(Me.Panel13)
-        Me.pnl_dashboard.Controls.Add(Me.Panel15)
-        Me.pnl_dashboard.Controls.Add(Me.Label23)
-        Me.pnl_dashboard.Controls.Add(Me.Panel12)
-        Me.pnl_dashboard.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnl_dashboard.Location = New System.Drawing.Point(196, 35)
-        Me.pnl_dashboard.Name = "pnl_dashboard"
-        Me.pnl_dashboard.Size = New System.Drawing.Size(1157, 780)
-        Me.pnl_dashboard.TabIndex = 15
-        '
-        'Panel14
-        '
-        Me.Panel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Panel14.Controls.Add(Me.Panel10)
-        Me.Panel14.Controls.Add(Me.Label34)
-        Me.Panel14.Location = New System.Drawing.Point(414, 54)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(331, 260)
-        Me.Panel14.TabIndex = 3
-        '
-        'Panel10
-        '
-        Me.Panel10.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel10.Controls.Add(Me.lblmonthlysale)
-        Me.Panel10.Location = New System.Drawing.Point(12, 43)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(306, 197)
-        Me.Panel10.TabIndex = 85
-        '
-        'lblmonthlysale
-        '
-        Me.lblmonthlysale.BackColor = System.Drawing.SystemColors.Control
-        Me.lblmonthlysale.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lblmonthlysale.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmonthlysale.Location = New System.Drawing.Point(9, 63)
-        Me.lblmonthlysale.Name = "lblmonthlysale"
-        Me.lblmonthlysale.ReadOnly = True
-        Me.lblmonthlysale.Size = New System.Drawing.Size(289, 79)
-        Me.lblmonthlysale.TabIndex = 89
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.BackColor = System.Drawing.Color.Transparent
-        Me.Label34.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.ForeColor = System.Drawing.Color.Black
-        Me.Label34.Location = New System.Drawing.Point(3, 2)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(166, 38)
-        Me.Label34.TabIndex = 84
-        Me.Label34.Text = "MONTHLY"
-        '
-        'Panel13
-        '
-        Me.Panel13.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Panel13.Controls.Add(Me.Panel9)
-        Me.Panel13.Controls.Add(Me.Label33)
-        Me.Panel13.Location = New System.Drawing.Point(51, 54)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(331, 260)
-        Me.Panel13.TabIndex = 3
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel9.Controls.Add(Me.lbldailysale)
-        Me.Panel9.Location = New System.Drawing.Point(10, 43)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(306, 197)
-        Me.Panel9.TabIndex = 84
-        '
-        'lbldailysale
-        '
-        Me.lbldailysale.BackColor = System.Drawing.SystemColors.Control
-        Me.lbldailysale.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lbldailysale.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldailysale.Location = New System.Drawing.Point(12, 58)
-        Me.lbldailysale.Name = "lbldailysale"
-        Me.lbldailysale.ReadOnly = True
-        Me.lbldailysale.Size = New System.Drawing.Size(285, 79)
-        Me.lbldailysale.TabIndex = 87
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.BackColor = System.Drawing.Color.Transparent
-        Me.Label33.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.ForeColor = System.Drawing.Color.Black
-        Me.Label33.Location = New System.Drawing.Point(3, 2)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(106, 38)
-        Me.Label33.TabIndex = 83
-        Me.Label33.Text = "DAILY"
-        '
-        'Panel15
-        '
-        Me.Panel15.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Panel15.Controls.Add(Me.Panel11)
-        Me.Panel15.Controls.Add(Me.Label35)
-        Me.Panel15.Location = New System.Drawing.Point(775, 54)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(331, 260)
-        Me.Panel15.TabIndex = 2
-        '
-        'Panel11
-        '
-        Me.Panel11.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel11.Controls.Add(Me.lblyearlysale)
-        Me.Panel11.Location = New System.Drawing.Point(11, 43)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(306, 197)
-        Me.Panel11.TabIndex = 85
-        '
-        'lblyearlysale
-        '
-        Me.lblyearlysale.BackColor = System.Drawing.SystemColors.Control
-        Me.lblyearlysale.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lblyearlysale.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblyearlysale.Location = New System.Drawing.Point(3, 71)
-        Me.lblyearlysale.Name = "lblyearlysale"
-        Me.lblyearlysale.ReadOnly = True
-        Me.lblyearlysale.Size = New System.Drawing.Size(300, 79)
-        Me.lblyearlysale.TabIndex = 89
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.BackColor = System.Drawing.Color.Transparent
-        Me.Label35.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.ForeColor = System.Drawing.Color.Black
-        Me.Label35.Location = New System.Drawing.Point(4, 2)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(131, 38)
-        Me.Label35.TabIndex = 85
-        Me.Label35.Text = "YEARLY"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.BackColor = System.Drawing.Color.Transparent
-        Me.Label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label23.Font = New System.Drawing.Font("Century Gothic", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label23.Location = New System.Drawing.Point(40, 350)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(276, 41)
-        Me.Label23.TabIndex = 22
-        Me.Label23.Text = "NOTIFICATIONS"
-        '
-        'Panel12
-        '
-        Me.Panel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Panel12.Controls.Add(Me.dgNotif)
-        Me.Panel12.Location = New System.Drawing.Point(47, 397)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(1071, 360)
-        Me.Panel12.TabIndex = 0
-        '
-        'dgNotif
-        '
-        Me.dgNotif.AllowUserToAddRows = False
-        Me.dgNotif.AllowUserToDeleteRows = False
-        DataGridViewCellStyle33.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black
-        Me.dgNotif.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle33
-        Me.dgNotif.BackgroundColor = System.Drawing.Color.White
-        DataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle34.BackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle34.Font = New System.Drawing.Font("Century Gothic", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle34.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgNotif.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle34
-        Me.dgNotif.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgNotif.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25})
-        DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle39.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle39.Padding = New System.Windows.Forms.Padding(5)
-        DataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
-        DataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgNotif.DefaultCellStyle = DataGridViewCellStyle39
-        Me.dgNotif.Location = New System.Drawing.Point(14, 14)
-        Me.dgNotif.Name = "dgNotif"
-        Me.dgNotif.ReadOnly = True
-        DataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle40.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle40.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgNotif.RowHeadersDefaultCellStyle = DataGridViewCellStyle40
-        Me.dgNotif.RowHeadersVisible = False
-        DataGridViewCellStyle41.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgNotif.RowsDefaultCellStyle = DataGridViewCellStyle41
-        Me.dgNotif.Size = New System.Drawing.Size(1044, 335)
-        Me.dgNotif.TabIndex = 68
-        '
-        'DataGridViewTextBoxColumn20
-        '
-        DataGridViewCellStyle35.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn20.DefaultCellStyle = DataGridViewCellStyle35
-        Me.DataGridViewTextBoxColumn20.Frozen = True
-        Me.DataGridViewTextBoxColumn20.HeaderText = "ID"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
-        Me.DataGridViewTextBoxColumn20.ReadOnly = True
-        Me.DataGridViewTextBoxColumn20.Width = 50
-        '
-        'DataGridViewTextBoxColumn21
-        '
-        DataGridViewCellStyle36.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn21.DefaultCellStyle = DataGridViewCellStyle36
-        Me.DataGridViewTextBoxColumn21.FillWeight = 200.0!
-        Me.DataGridViewTextBoxColumn21.Frozen = True
-        Me.DataGridViewTextBoxColumn21.HeaderText = "ITEM NAME"
-        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
-        Me.DataGridViewTextBoxColumn21.ReadOnly = True
-        Me.DataGridViewTextBoxColumn21.Width = 350
-        '
-        'DataGridViewTextBoxColumn22
-        '
-        DataGridViewCellStyle37.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn22.DefaultCellStyle = DataGridViewCellStyle37
-        Me.DataGridViewTextBoxColumn22.HeaderText = "STOCK"
-        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
-        Me.DataGridViewTextBoxColumn22.ReadOnly = True
-        Me.DataGridViewTextBoxColumn22.Width = 150
-        '
-        'DataGridViewTextBoxColumn23
-        '
-        Me.DataGridViewTextBoxColumn23.HeaderText = "COST"
-        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
-        Me.DataGridViewTextBoxColumn23.ReadOnly = True
-        Me.DataGridViewTextBoxColumn23.Width = 150
-        '
-        'DataGridViewTextBoxColumn24
-        '
-        DataGridViewCellStyle38.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn24.DefaultCellStyle = DataGridViewCellStyle38
-        Me.DataGridViewTextBoxColumn24.HeaderText = "PRICE"
-        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
-        Me.DataGridViewTextBoxColumn24.ReadOnly = True
-        Me.DataGridViewTextBoxColumn24.Width = 150
-        '
-        'DataGridViewTextBoxColumn25
-        '
-        Me.DataGridViewTextBoxColumn25.HeaderText = "LAST UPDATED"
-        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
-        Me.DataGridViewTextBoxColumn25.ReadOnly = True
-        Me.DataGridViewTextBoxColumn25.Width = 300
+        'pnlTop
+        '
+        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.pnlTop.BackgroundImage = CType(resources.GetObject("pnlTop.BackgroundImage"), System.Drawing.Image)
+        Me.pnlTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pnlTop.Controls.Add(Me.picMaximize)
+        Me.pnlTop.Controls.Add(Me.picClose)
+        Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlTop.Location = New System.Drawing.Point(196, 0)
+        Me.pnlTop.Name = "pnlTop"
+        Me.pnlTop.Size = New System.Drawing.Size(1157, 35)
+        Me.pnlTop.TabIndex = 14
+        '
+        'picMaximize
+        '
+        Me.picMaximize.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picMaximize.BackgroundImage = CType(resources.GetObject("picMaximize.BackgroundImage"), System.Drawing.Image)
+        Me.picMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.picMaximize.Location = New System.Drawing.Point(1129, 7)
+        Me.picMaximize.Name = "picMaximize"
+        Me.picMaximize.Size = New System.Drawing.Size(18, 18)
+        Me.picMaximize.TabIndex = 17
+        Me.picMaximize.TabStop = False
+        '
+        'picClose
+        '
+        Me.picClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.picClose.BackgroundImage = CType(resources.GetObject("picClose.BackgroundImage"), System.Drawing.Image)
+        Me.picClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.picClose.Location = New System.Drawing.Point(1100, 7)
+        Me.picClose.Name = "picClose"
+        Me.picClose.Size = New System.Drawing.Size(18, 18)
+        Me.picClose.TabIndex = 15
+        Me.picClose.TabStop = False
         '
         'pnlSide
         '
         Me.pnlSide.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.pnlSide.BackgroundImage = Global.FrancosSys.My.Resources.Resources._1234
         Me.pnlSide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pnlSide.Controls.Add(Me.btn_accounts)
-        Me.pnlSide.Controls.Add(Me.Panel1)
         Me.pnlSide.Controls.Add(Me.pnlOnButtonPosition)
         Me.pnlSide.Controls.Add(Me.btn_logout)
+        Me.pnlSide.Controls.Add(Me.btn_accounts)
+        Me.pnlSide.Controls.Add(Me.btn_logs)
+        Me.pnlSide.Controls.Add(Me.Panel1)
         Me.pnlSide.Controls.Add(Me.btn_sales)
         Me.pnlSide.Controls.Add(Me.btn_inventory)
         Me.pnlSide.Controls.Add(Me.btn_cashier)
@@ -2649,6 +2892,23 @@ Partial Class frmMain
         Me.pnlSide.Size = New System.Drawing.Size(196, 815)
         Me.pnlSide.TabIndex = 13
         '
+        'btn_logout
+        '
+        Me.btn_logout.BackColor = System.Drawing.Color.Transparent
+        Me.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_logout.FlatAppearance.BorderSize = 0
+        Me.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_logout.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_logout.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btn_logout.Image = CType(resources.GetObject("btn_logout.Image"), System.Drawing.Image)
+        Me.btn_logout.Location = New System.Drawing.Point(-1, 597)
+        Me.btn_logout.Name = "btn_logout"
+        Me.btn_logout.Size = New System.Drawing.Size(229, 71)
+        Me.btn_logout.TabIndex = 23
+        Me.btn_logout.Text = "   LOGOUT"
+        Me.btn_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_logout.UseVisualStyleBackColor = False
+        '
         'btn_accounts
         '
         Me.btn_accounts.BackColor = System.Drawing.Color.Transparent
@@ -2657,14 +2917,39 @@ Partial Class frmMain
         Me.btn_accounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_accounts.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_accounts.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btn_accounts.Image = CType(resources.GetObject("btn_accounts.Image"), System.Drawing.Image)
-        Me.btn_accounts.Location = New System.Drawing.Point(-1, 470)
+        Me.btn_accounts.Image = Global.FrancosSys.My.Resources.Resources.btn_acc
+        Me.btn_accounts.Location = New System.Drawing.Point(-1, 529)
         Me.btn_accounts.Name = "btn_accounts"
-        Me.btn_accounts.Size = New System.Drawing.Size(263, 71)
+        Me.btn_accounts.Size = New System.Drawing.Size(245, 71)
         Me.btn_accounts.TabIndex = 21
         Me.btn_accounts.Text = "   ACCOUNTS"
         Me.btn_accounts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btn_accounts.UseVisualStyleBackColor = False
+        '
+        'pnlOnButtonPosition
+        '
+        Me.pnlOnButtonPosition.BackColor = System.Drawing.Color.PaleVioletRed
+        Me.pnlOnButtonPosition.Location = New System.Drawing.Point(0, 190)
+        Me.pnlOnButtonPosition.Name = "pnlOnButtonPosition"
+        Me.pnlOnButtonPosition.Size = New System.Drawing.Size(19, 71)
+        Me.pnlOnButtonPosition.TabIndex = 10
+        '
+        'btn_logs
+        '
+        Me.btn_logs.BackColor = System.Drawing.Color.Transparent
+        Me.btn_logs.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_logs.FlatAppearance.BorderSize = 0
+        Me.btn_logs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_logs.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_logs.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btn_logs.Image = Global.FrancosSys.My.Resources.Resources.btn_logs
+        Me.btn_logs.Location = New System.Drawing.Point(-1, 463)
+        Me.btn_logs.Name = "btn_logs"
+        Me.btn_logs.Size = New System.Drawing.Size(263, 71)
+        Me.btn_logs.TabIndex = 22
+        Me.btn_logs.Text = "   USERS LOGS"
+        Me.btn_logs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_logs.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -2675,31 +2960,6 @@ Partial Class frmMain
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(178, 104)
         Me.Panel1.TabIndex = 15
-        '
-        'pnlOnButtonPosition
-        '
-        Me.pnlOnButtonPosition.BackColor = System.Drawing.Color.PaleVioletRed
-        Me.pnlOnButtonPosition.Location = New System.Drawing.Point(0, 190)
-        Me.pnlOnButtonPosition.Name = "pnlOnButtonPosition"
-        Me.pnlOnButtonPosition.Size = New System.Drawing.Size(19, 71)
-        Me.pnlOnButtonPosition.TabIndex = 10
-        '
-        'btn_logout
-        '
-        Me.btn_logout.BackColor = System.Drawing.Color.Transparent
-        Me.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_logout.FlatAppearance.BorderSize = 0
-        Me.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_logout.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_logout.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btn_logout.Image = CType(resources.GetObject("btn_logout.Image"), System.Drawing.Image)
-        Me.btn_logout.Location = New System.Drawing.Point(-1, 540)
-        Me.btn_logout.Name = "btn_logout"
-        Me.btn_logout.Size = New System.Drawing.Size(237, 71)
-        Me.btn_logout.TabIndex = 20
-        Me.btn_logout.Text = "   LOGOUT"
-        Me.btn_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_logout.UseVisualStyleBackColor = False
         '
         'btn_sales
         '
@@ -2775,12 +3035,13 @@ Partial Class frmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1353, 815)
-        Me.Controls.Add(Me.pnl_accounts)
-        Me.Controls.Add(Me.pnl_inventory)
         Me.Controls.Add(Me.pnl_dashboard)
+        Me.Controls.Add(Me.pnl_logs)
+        Me.Controls.Add(Me.pnl_sales)
+        Me.Controls.Add(Me.pnl_inventory)
+        Me.Controls.Add(Me.pnl_accounts)
         Me.Controls.Add(Me.pnldeleteorder)
         Me.Controls.Add(Me.pnl_cashier)
-        Me.Controls.Add(Me.pnl_sales)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlSide)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -2789,50 +3050,18 @@ Partial Class frmMain
         Me.Text = "frmMenu"
         Me.pnl_accounts.ResumeLayout(False)
         Me.pnl_accounts.PerformLayout()
-        CType(Me.dgUsers, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_AddUser.ResumeLayout(False)
         Me.pnl_AddUser.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlTop.ResumeLayout(False)
-        CType(Me.picMaximize, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picClose, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_sales.ResumeLayout(False)
-        Me.pnl_sales.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel8.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
-        CType(Me.dgsalesrecords, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_cashier.ResumeLayout(False)
-        Me.pnl_cashier.PerformLayout()
-        CType(Me.dgSelectCashier, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        CType(Me.dgCashier, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlQTY.ResumeLayout(False)
-        Me.pnlQTY.PerformLayout()
-        Me.pnlReceipt.ResumeLayout(False)
-        Me.pnlReceipt.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgReceipt, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgUsers, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnldeleteorder.ResumeLayout(False)
         Me.pnldeleteorder.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnl_inventory.ResumeLayout(False)
-        Me.pnl_inventory.PerformLayout()
-        Me.pnl_additem.ResumeLayout(False)
-        Me.pnl_additem.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgInventory, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_logs.ResumeLayout(False)
+        Me.pnl_logs.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_dashboard.ResumeLayout(False)
         Me.pnl_dashboard.PerformLayout()
         Me.Panel14.ResumeLayout(False)
@@ -2849,14 +3078,47 @@ Partial Class frmMain
         Me.Panel11.PerformLayout()
         Me.Panel12.ResumeLayout(False)
         CType(Me.dgNotif, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_sales.ResumeLayout(False)
+        Me.pnl_sales.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        CType(Me.dgsalesrecords, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_inventory.ResumeLayout(False)
+        Me.pnl_inventory.PerformLayout()
+        Me.pnl_additem.ResumeLayout(False)
+        Me.pnl_additem.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgInventory, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnl_cashier.ResumeLayout(False)
+        Me.pnl_cashier.PerformLayout()
+        CType(Me.dgSelectCashier, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        CType(Me.dgCashier, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlQTY.ResumeLayout(False)
+        Me.pnlQTY.PerformLayout()
+        Me.pnlReceipt.ResumeLayout(False)
+        Me.pnlReceipt.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgReceipt, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlTop.ResumeLayout(False)
+        CType(Me.picMaximize, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picClose, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlSide.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents pnlOnButtonPosition As Panel
-    Friend WithEvents btn_logout As Button
     Friend WithEvents btn_sales As Button
     Friend WithEvents btn_inventory As Button
     Friend WithEvents btn_cashier As Button
@@ -3061,4 +3323,24 @@ Partial Class frmMain
     Friend WithEvents timep As DataGridViewTextBoxColumn
     Friend WithEvents datep As DataGridViewTextBoxColumn
     Friend WithEvents lblTypeOfDel As Label
+    Friend WithEvents pnl_logs As Panel
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label51 As Label
+    Friend WithEvents Label52 As Label
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Label64 As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Label65 As Label
+    Friend WithEvents Label66 As Label
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn27 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn28 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn33 As DataGridViewTextBoxColumn
+    Friend WithEvents btn_logs As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btn_logout As Button
 End Class

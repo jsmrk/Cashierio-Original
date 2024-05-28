@@ -50,6 +50,7 @@ Public Class frmMain
         btn_cashier.BackColor = Color.Transparent
         btn_inventory.BackColor = Color.Transparent
         btn_sales.BackColor = Color.Transparent
+        btn_logs.BackColor = Color.Transparent
         btn_accounts.BackColor = Color.Transparent
 
         procDisplayYearlySale()
@@ -60,6 +61,7 @@ Public Class frmMain
         pnl_cashier.Visible = False
         pnl_inventory.Visible = False
         pnl_sales.Visible = False
+        pnl_logs.Visible = False
         pnl_accounts.Visible = False
 
         notif()
@@ -73,6 +75,7 @@ Public Class frmMain
         btn_cashier.BackColor = SystemColors.Control
         btn_inventory.BackColor = Color.Transparent
         btn_sales.BackColor = Color.Transparent
+        btn_logs.BackColor = Color.Transparent
         btn_accounts.BackColor = Color.Transparent
 
         procDisplayItemsInCashier()
@@ -82,6 +85,7 @@ Public Class frmMain
         pnl_cashier.Visible = True
         pnl_inventory.Visible = False
         pnl_sales.Visible = False
+        pnl_logs.Visible = False
         pnl_accounts.Visible = False
     End Sub
 
@@ -93,6 +97,7 @@ Public Class frmMain
         btn_cashier.BackColor = Color.Transparent
         btn_inventory.BackColor = SystemColors.Control
         btn_sales.BackColor = Color.Transparent
+        btn_logs.BackColor = Color.Transparent
         btn_accounts.BackColor = Color.Transparent
 
         pnl_additem.Visible = False
@@ -103,6 +108,7 @@ Public Class frmMain
         pnl_cashier.Visible = False
         pnl_inventory.Visible = True
         pnl_sales.Visible = False
+        pnl_logs.Visible = False
         pnl_accounts.Visible = False
     End Sub
 
@@ -114,6 +120,7 @@ Public Class frmMain
         btn_cashier.BackColor = Color.Transparent
         btn_inventory.BackColor = Color.Transparent
         btn_sales.BackColor = SystemColors.Control
+        btn_logs.BackColor = Color.Transparent
         btn_accounts.BackColor = Color.Transparent
 
         procDisplaySalesRecords()
@@ -126,6 +133,7 @@ Public Class frmMain
         pnl_cashier.Visible = False
         pnl_inventory.Visible = False
         pnl_sales.Visible = True
+        pnl_logs.Visible = False
         pnl_accounts.Visible = False
 
         countrecords()
@@ -139,6 +147,7 @@ Public Class frmMain
         btn_cashier.BackColor = Color.Transparent
         btn_inventory.BackColor = Color.Transparent
         btn_sales.BackColor = Color.Transparent
+        btn_logs.BackColor = Color.Transparent
         btn_accounts.BackColor = SystemColors.Control
 
         procDisplayAllUsers()
@@ -148,6 +157,7 @@ Public Class frmMain
         pnl_cashier.Visible = False
         pnl_inventory.Visible = False
         pnl_sales.Visible = False
+        pnl_logs.Visible = False
         pnl_accounts.Visible = True
     End Sub
 
@@ -156,7 +166,7 @@ Public Class frmMain
         frmLogIn.Dispose()
     End Sub
 
-    Private Sub btn_logout_Click(sender As Object, e As EventArgs) Handles btn_logout.Click
+    Private Sub btn_logout_Click(sender As Object, e As EventArgs)
         Me.Visible = False
         frmLogIn.Visible = True
         frmLogIn.txtPassword.Text = ""
@@ -717,7 +727,7 @@ Public Class frmMain
             lblchange.Text = "0"
             lblchange.ForeColor = Color.Black
             txtCash.BackColor = SystemColors.Control
-        ElseIf txtCash.Text >= CDbl(lbltotalorder.Text)
+        ElseIf txtCash.Text >= CDbl(lbltotalorder.Text) Then
             lblchange.Text = CDbl(txtCash.Text) - lbltotalorder.Text
             lblchange.ForeColor = Color.Black
             txtCash.BackColor = SystemColors.Control
@@ -1135,7 +1145,7 @@ Public Class frmMain
                 EnableAllControls()
             End If
         ElseIf password <> requiredPassword Then
-                MessageBox.Show("Incorrect password.")
+            MessageBox.Show("Incorrect password.")
             btnDeleteOrder.PerformClick()
             txtpass.Text = ""
         End If
@@ -1250,5 +1260,37 @@ Public Class frmMain
             control.Enabled = True
         Next
     End Sub
+
+    Private Sub btn_logs_Click(sender As Object, e As EventArgs) Handles btn_logs.Click
+        pnlOnButtonPosition.Height = btn_logs.Height
+        pnlOnButtonPosition.Top = btn_logs.Top
+
+        btn_dash.BackColor = Color.Transparent
+        btn_cashier.BackColor = Color.Transparent
+        btn_inventory.BackColor = Color.Transparent
+        btn_sales.BackColor = Color.Transparent
+        btn_logs.BackColor = SystemColors.Control
+        btn_accounts.BackColor = Color.Transparent
+
+
+        ' procDisplayAllUsers()
+
+        pnl_AddUser.Visible = False
+        pnl_dashboard.Visible = False
+        pnl_cashier.Visible = False
+        pnl_inventory.Visible = False
+        pnl_sales.Visible = False
+        pnl_logs.Visible = True
+        pnl_accounts.Visible = False
+    End Sub
+
+    Private Sub btn_logout_Click_1(sender As Object, e As EventArgs) Handles btn_logout.Click
+        Me.Visible = False
+        frmLogIn.Visible = True
+        frmLogIn.txtPassword.Text = ""
+        frmLogIn.txtusername.Text = ""
+        frmLogIn.cmbUserPosition.Text = ""
+    End Sub
+
 
 End Class
