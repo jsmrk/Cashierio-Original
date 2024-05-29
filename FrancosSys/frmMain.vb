@@ -1428,5 +1428,8 @@ Public Class frmMain
         SaveToLogs(log:="User Has Logged Out", action:="userSession")
     End Sub
 
-
+    Private Sub btnBackup_Click(sender As Object, e As EventArgs) Handles btnBackup.Click
+        ExportDatabase()
+        UploadFileToGoogleDrive()
+    End Sub
 End Class
