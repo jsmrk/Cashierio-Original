@@ -2,6 +2,8 @@
 Imports System.Drawing
 Imports System.IO
 Imports System.Diagnostics
+Imports Microsoft.VisualBasic.Logging
+Imports System.Text
 
 Public Class frmMain
     Dim cid As Integer
@@ -162,6 +164,7 @@ Public Class frmMain
     End Sub
 
     Private Sub picMaximize_Click(sender As Object, e As EventArgs) Handles picMaximize.Click
+        SaveToLogs(log:="User Has Logged Out", action:="userSession")
         Me.Dispose()
         frmLogIn.Dispose()
     End Sub
@@ -258,7 +261,11 @@ Public Class frmMain
                     .ExecuteNonQuery()
                 End With
 
-                MessageBox.Show("Record Successfully Saved", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Successfully Created Account", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                Dim log = (g_userposition + " " + g_userposition + " added an account: " + g_userposition + " " + txtlastname.Text)
+                SaveToLogs(log:=log, action:="userSession")
+
                 pnl_AddUser.Visible = False
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
@@ -298,9 +305,10 @@ Public Class frmMain
                 .CommandType = CommandType.StoredProcedure
                 .Parameters.AddWithValue("@p_id", CInt(dgUsers.CurrentRow.Cells(0).Value))
                 .ExecuteNonQuery()
-                MessageBox.Show("Record Successfully Deleted!", "Record Status", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                MessageBox.Show("Account Successfully Deleted!", "Record Status", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             End With
             'refresh/reload customer records in datagridview
+            Dim log = (g_userposition + " " + g_userposition + " deleted an account: " + dgUsers.CurrentRow.Cells(1).Value + " " + dgUsers.CurrentRow.Cells(2).Value)
             procDisplayAllUsers()
         Catch ex As Exception
             MessageBox.Show("" + ex.Message)
@@ -457,7 +465,16 @@ Public Class frmMain
 
 
                 MessageBox.Show("Record Successfully Save", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
                 pnl_additem.Visible = False
+                Dim log As String = "Added an Item in Inventory:" & Environment.NewLine & "   " &
+                    "Item: " & txtItemName.Text & Environment.NewLine & "   " &
+                    "Stock: " & txtStock.Text & Environment.NewLine & "   " &
+                    "Cost: " & txtCost.Text & Environment.NewLine & "   " &
+                    "Price: " & txtPrice.Text & Environment.NewLine & "   " &
+                    "Date Added: " & lblitemDT.Text
+                SaveToLogs(log:=log, action:="userSession")
+
             Catch ex As Exception
                 MessageBox.Show("" + ex.Message)
             End Try
@@ -478,8 +495,16 @@ Public Class frmMain
                     .ExecuteNonQuery()
                 End With
 
-
                 MessageBox.Show("Record Successfully Save", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                Dim log As String = "Updated an Item in Inventory:" & Environment.NewLine & "   " &
+                    "Item: " & dgInventory.CurrentRow.Cells(1).Value & " to " & txtItemName.Text & Environment.NewLine & "   " &
+                    "Stock: " & dgInventory.CurrentRow.Cells(2).Value & " to " & txtStock.Text & Environment.NewLine & "   " &
+                    "Cost: " & dgInventory.CurrentRow.Cells(3).Value & " to " & txtCost.Text & Environment.NewLine & "   " &
+                    "Price: " & dgInventory.CurrentRow.Cells(4).Value & " to " & txtPrice.Text & Environment.NewLine & "   " &
+                    "Date Added: " & lblitemDT.Text
+                SaveToLogs(log:=log, action:="userSession")
+
                 pnl_additem.Visible = False
             Catch ex As Exception
                 MessageBox.Show("" + ex.Message)
@@ -500,7 +525,13 @@ Public Class frmMain
                 .ExecuteNonQuery()
                 MessageBox.Show("Record Successfully Deleted!", "Record Status", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             End With
-            'refresh/reload customer records in datagridview
+            Dim log As String = "Deleted an Item in Inventory:" & Environment.NewLine & "   " &
+                    "Item: " & dgInventory.CurrentRow.Cells(1).Value & Environment.NewLine & "   " &
+                    "Stock: " & dgInventory.CurrentRow.Cells(2).Value & Environment.NewLine & "   " &
+                    "Cost: " & dgInventory.CurrentRow.Cells(3).Value & Environment.NewLine & "   " &
+                    "Price: " & dgInventory.CurrentRow.Cells(4).Value & Environment.NewLine & "   " &
+                    "Date Added: " & dgInventory.CurrentRow.Cells(5).Value
+            SaveToLogs(log:=log, action:="userSession")
             procDisplayInventory()
         Catch ex As Exception
             MessageBox.Show("" + ex.Message)
@@ -805,12 +836,19 @@ Public Class frmMain
         cash = txtCash.Text
         totalprice = lbltotalorder.Text
 
+        Dim log As String = (GenerateLogFromDataGrid(dgCashier) & Environment.NewLine &
+        "Total: " & lbltotalorder.Text & Environment.NewLine &
+        "Cash: " & txtCash.Text & Environment.NewLine &
+        "Change: " & lblchange.Text)
+
+        SaveToLogs(log:=log, action:="userSession")
+
         CashierToReceipt(dgCashier, dgReceipt)
         lblrtotal.Text = lbltotalorder.Text
         lblrcash.Text = txtCash.Text
         lblrchange.Text = lblrchange.Text
         pnlReceipt.BringToFront()
-        saveReceiptPNG()
+        'saveReceiptPNG()
 
         dgCashier.Rows.Clear()
         txtCash.Text = 0
@@ -822,6 +860,57 @@ Public Class frmMain
         txtCash.BackColor = SystemColors.Control
 
     End Sub
+
+    Private Function GenerateLogFromDataGrid(dataGrid As DataGridView) As String
+        Dim log As New StringBuilder()
+
+        ' Define column headers
+        Dim headers() As String = {"QTY", "ITEM", "PRICE", "TIME", "DATE"}
+
+        ' Determine the maximum length of each column for proper alignment
+        Dim colWidths(headers.Length - 1) As Integer
+        For i As Integer = 0 To headers.Length - 1
+            colWidths(i) = headers(i).Length
+        Next
+
+        ' Iterate through the rows to find the maximum width needed for each column
+        For i As Integer = 0 To dataGrid.RowCount - 1
+            For j As Integer = 0 To headers.Length - 1
+                Dim cellValue As String = dataGrid.Rows(i).Cells(j).Value.ToString()
+                If cellValue.Length > colWidths(j) Then
+                    colWidths(j) = cellValue.Length
+                End If
+            Next
+        Next
+
+        ' Create a format string for each row based on the column widths
+        Dim formatString As String = ""
+        For Each widthh In colWidths
+            formatString &= "{" & Array.IndexOf(colWidths, widthh) & ",-" & widthh & "}   "
+        Next
+        formatString = formatString.TrimEnd()
+
+        ' Append headers to the log
+        log.AppendLine(String.Format(formatString, headers.Cast(Of Object).ToArray()))
+
+        ' Append a separator line
+        log.AppendLine(New String("-"c, colWidths.Sum() + (headers.Length - 1) * 3))
+
+        ' Append rows to the log
+        For i As Integer = 0 To dataGrid.RowCount - 1
+            Dim rowValues(headers.Length - 1) As Object
+            For j As Integer = 0 To headers.Length - 1
+                rowValues(j) = dataGrid.Rows(i).Cells(j).Value.ToString().PadRight(colWidths(j))
+            Next
+            log.AppendLine(String.Format(formatString, rowValues))
+        Next
+
+        Return log.ToString()
+    End Function
+
+
+
+
     Private Sub procDisplaySalesRecords()
         datRest = New DataTable
         SqlAdapterRest = New MySqlDataAdapter
@@ -1273,7 +1362,7 @@ Public Class frmMain
         btn_accounts.BackColor = Color.Transparent
 
 
-        ' procDisplayAllUsers()
+        procDisplayUserLogs()
 
         pnl_AddUser.Visible = False
         pnl_dashboard.Visible = False
@@ -1284,12 +1373,59 @@ Public Class frmMain
         pnl_accounts.Visible = False
     End Sub
 
+    Private Sub procDisplayUserLogs()
+        datRest = New DataTable
+        SqlAdapterRest = New MySqlDataAdapter
+
+        Try
+            With command
+                .Parameters.Clear()
+                .CommandText = "procDisplayUserLogs"
+                .CommandType = CommandType.StoredProcedure
+                SqlAdapterRest.SelectCommand = command
+                datRest.Clear()
+                SqlAdapterRest.Fill(datRest)
+
+                ' Sort the DataTable by the "ID" column in descending order
+                datRest.DefaultView.Sort = "ID DESC"
+                datRest = datRest.DefaultView.ToTable()
+
+                lbltotalusers.Text = datRest.Rows.Count
+
+                If datRest.Rows.Count > 0 Then
+                    dgUserLogs.RowCount = datRest.Rows.Count
+
+                    For row As Integer = 0 To datRest.Rows.Count - 1
+                        With dgUserLogs
+                            .Rows(row).Cells(0).Value = datRest.Rows(row).Item("id").ToString()
+                            .Rows(row).Cells(1).Value = datRest.Rows(row).Item("userposition").ToString()
+                            .Rows(row).Cells(2).Value = datRest.Rows(row).Item("fullname").ToString()
+                            .Rows(row).Cells(3).Value = datRest.Rows(row).Item("useraction").ToString()
+                            .Rows(row).Cells(4).Value = datRest.Rows(row).Item("datetimenow").ToString()
+                        End With
+                    Next
+                Else
+                    dgUserLogs.Rows.Clear()
+                    MessageBox.Show("NO Record Found!", "Record Status", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                End If
+            End With
+
+        Catch ex As Exception
+            MessageBox.Show("" + ex.Message)
+        Finally
+            datRest.Dispose()
+            SqlAdapterRest.Dispose()
+        End Try
+    End Sub
+
+
     Private Sub btn_logout_Click_1(sender As Object, e As EventArgs) Handles btn_logout.Click
         Me.Visible = False
         frmLogIn.Visible = True
         frmLogIn.txtPassword.Text = ""
         frmLogIn.txtusername.Text = ""
         frmLogIn.cmbUserPosition.Text = ""
+        SaveToLogs(log:="User Has Logged Out", action:="userSession")
     End Sub
 
 

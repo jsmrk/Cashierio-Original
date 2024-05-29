@@ -134,12 +134,7 @@ Partial Class frmMain
         Me.Label52 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Label64 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgUserLogs = New System.Windows.Forms.DataGridView()
         Me.Label65 = New System.Windows.Forms.Label()
         Me.Label66 = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
@@ -284,15 +279,21 @@ Partial Class frmMain
         Me.picMaximize = New System.Windows.Forms.PictureBox()
         Me.picClose = New System.Windows.Forms.PictureBox()
         Me.pnlSide = New System.Windows.Forms.Panel()
+        Me.pnlOnButtonPosition = New System.Windows.Forms.Panel()
         Me.btn_logout = New System.Windows.Forms.Button()
         Me.btn_accounts = New System.Windows.Forms.Button()
-        Me.pnlOnButtonPosition = New System.Windows.Forms.Panel()
         Me.btn_logs = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_sales = New System.Windows.Forms.Button()
         Me.btn_inventory = New System.Windows.Forms.Button()
         Me.btn_cashier = New System.Windows.Forms.Button()
         Me.btn_dash = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnl_accounts.SuspendLayout()
         Me.pnl_AddUser.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -301,7 +302,7 @@ Partial Class frmMain
         Me.pnldeleteorder.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_logs.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgUserLogs, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnl_dashboard.SuspendLayout()
         Me.Panel14.SuspendLayout()
@@ -984,7 +985,7 @@ Partial Class frmMain
         Me.pnl_logs.Controls.Add(Me.Label52)
         Me.pnl_logs.Controls.Add(Me.TextBox10)
         Me.pnl_logs.Controls.Add(Me.Label64)
-        Me.pnl_logs.Controls.Add(Me.DataGridView1)
+        Me.pnl_logs.Controls.Add(Me.dgUserLogs)
         Me.pnl_logs.Controls.Add(Me.Label65)
         Me.pnl_logs.Controls.Add(Me.Label66)
         Me.pnl_logs.Controls.Add(Me.PictureBox7)
@@ -1073,12 +1074,12 @@ Partial Class frmMain
         Me.Label64.TabIndex = 76
         Me.Label64.Text = "Search:"
         '
-        'DataGridView1
+        'dgUserLogs
         '
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
+        Me.dgUserLogs.AllowUserToDeleteRows = False
+        Me.dgUserLogs.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgUserLogs.BackgroundColor = System.Drawing.Color.White
+        Me.dgUserLogs.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         DataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle48.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1086,10 +1087,10 @@ Partial Class frmMain
         DataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle48
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33})
-        Me.DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.dgUserLogs.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle48
+        Me.dgUserLogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgUserLogs.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33})
+        Me.dgUserLogs.Cursor = System.Windows.Forms.Cursors.Hand
         DataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle49.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1098,11 +1099,11 @@ Partial Class frmMain
         DataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
         DataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.ActiveCaptionText
         DataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle49
-        Me.DataGridView1.EnableHeadersVisualStyles = False
-        Me.DataGridView1.Location = New System.Drawing.Point(38, 181)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
+        Me.dgUserLogs.DefaultCellStyle = DataGridViewCellStyle49
+        Me.dgUserLogs.EnableHeadersVisualStyles = False
+        Me.dgUserLogs.Location = New System.Drawing.Point(38, 181)
+        Me.dgUserLogs.Name = "dgUserLogs"
+        Me.dgUserLogs.ReadOnly = True
         DataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle50.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1110,52 +1111,10 @@ Partial Class frmMain
         DataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle50
-        Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(1089, 553)
-        Me.DataGridView1.TabIndex = 20
-        '
-        'DataGridViewTextBoxColumn26
-        '
-        Me.DataGridViewTextBoxColumn26.HeaderText = "ID"
-        Me.DataGridViewTextBoxColumn26.MinimumWidth = 67
-        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
-        Me.DataGridViewTextBoxColumn26.ReadOnly = True
-        Me.DataGridViewTextBoxColumn26.Width = 67
-        '
-        'DataGridViewTextBoxColumn27
-        '
-        Me.DataGridViewTextBoxColumn27.FillWeight = 200.0!
-        Me.DataGridViewTextBoxColumn27.HeaderText = "POSITION"
-        Me.DataGridViewTextBoxColumn27.MinimumWidth = 150
-        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
-        Me.DataGridViewTextBoxColumn27.ReadOnly = True
-        Me.DataGridViewTextBoxColumn27.Width = 150
-        '
-        'DataGridViewTextBoxColumn28
-        '
-        Me.DataGridViewTextBoxColumn28.FillWeight = 300.0!
-        Me.DataGridViewTextBoxColumn28.HeaderText = "FULLNAME"
-        Me.DataGridViewTextBoxColumn28.MinimumWidth = 300
-        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
-        Me.DataGridViewTextBoxColumn28.ReadOnly = True
-        Me.DataGridViewTextBoxColumn28.Width = 300
-        '
-        'DataGridViewTextBoxColumn32
-        '
-        Me.DataGridViewTextBoxColumn32.HeaderText = "ACTION"
-        Me.DataGridViewTextBoxColumn32.MinimumWidth = 370
-        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
-        Me.DataGridViewTextBoxColumn32.ReadOnly = True
-        Me.DataGridViewTextBoxColumn32.Width = 370
-        '
-        'DataGridViewTextBoxColumn33
-        '
-        Me.DataGridViewTextBoxColumn33.HeaderText = "DATE & TIME"
-        Me.DataGridViewTextBoxColumn33.MinimumWidth = 200
-        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
-        Me.DataGridViewTextBoxColumn33.ReadOnly = True
-        Me.DataGridViewTextBoxColumn33.Width = 200
+        Me.dgUserLogs.RowHeadersDefaultCellStyle = DataGridViewCellStyle50
+        Me.dgUserLogs.RowHeadersVisible = False
+        Me.dgUserLogs.Size = New System.Drawing.Size(1089, 553)
+        Me.dgUserLogs.TabIndex = 20
         '
         'Label65
         '
@@ -1262,6 +1221,7 @@ Partial Class frmMain
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel9.Controls.Add(Me.TextBox1)
         Me.Panel9.Controls.Add(Me.lbldailysale)
         Me.Panel9.Location = New System.Drawing.Point(10, 43)
         Me.Panel9.Name = "Panel9"
@@ -2892,6 +2852,14 @@ Partial Class frmMain
         Me.pnlSide.Size = New System.Drawing.Size(196, 815)
         Me.pnlSide.TabIndex = 13
         '
+        'pnlOnButtonPosition
+        '
+        Me.pnlOnButtonPosition.BackColor = System.Drawing.Color.PaleVioletRed
+        Me.pnlOnButtonPosition.Location = New System.Drawing.Point(0, 190)
+        Me.pnlOnButtonPosition.Name = "pnlOnButtonPosition"
+        Me.pnlOnButtonPosition.Size = New System.Drawing.Size(19, 71)
+        Me.pnlOnButtonPosition.TabIndex = 10
+        '
         'btn_logout
         '
         Me.btn_logout.BackColor = System.Drawing.Color.Transparent
@@ -2925,14 +2893,6 @@ Partial Class frmMain
         Me.btn_accounts.Text = "   ACCOUNTS"
         Me.btn_accounts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btn_accounts.UseVisualStyleBackColor = False
-        '
-        'pnlOnButtonPosition
-        '
-        Me.pnlOnButtonPosition.BackColor = System.Drawing.Color.PaleVioletRed
-        Me.pnlOnButtonPosition.Location = New System.Drawing.Point(0, 190)
-        Me.pnlOnButtonPosition.Name = "pnlOnButtonPosition"
-        Me.pnlOnButtonPosition.Size = New System.Drawing.Size(19, 71)
-        Me.pnlOnButtonPosition.TabIndex = 10
         '
         'btn_logs
         '
@@ -3030,6 +2990,59 @@ Partial Class frmMain
         Me.btn_dash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btn_dash.UseVisualStyleBackColor = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(11, 59)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(285, 79)
+        Me.TextBox1.TabIndex = 88
+        '
+        'DataGridViewTextBoxColumn26
+        '
+        Me.DataGridViewTextBoxColumn26.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn26.MinimumWidth = 67
+        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        Me.DataGridViewTextBoxColumn26.ReadOnly = True
+        Me.DataGridViewTextBoxColumn26.Width = 67
+        '
+        'DataGridViewTextBoxColumn27
+        '
+        Me.DataGridViewTextBoxColumn27.FillWeight = 200.0!
+        Me.DataGridViewTextBoxColumn27.HeaderText = "POSITION"
+        Me.DataGridViewTextBoxColumn27.MinimumWidth = 150
+        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
+        Me.DataGridViewTextBoxColumn27.ReadOnly = True
+        Me.DataGridViewTextBoxColumn27.Width = 150
+        '
+        'DataGridViewTextBoxColumn28
+        '
+        Me.DataGridViewTextBoxColumn28.FillWeight = 300.0!
+        Me.DataGridViewTextBoxColumn28.HeaderText = "FULLNAME"
+        Me.DataGridViewTextBoxColumn28.MinimumWidth = 300
+        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        Me.DataGridViewTextBoxColumn28.ReadOnly = True
+        Me.DataGridViewTextBoxColumn28.Width = 300
+        '
+        'DataGridViewTextBoxColumn32
+        '
+        Me.DataGridViewTextBoxColumn32.HeaderText = "ACTION"
+        Me.DataGridViewTextBoxColumn32.MinimumWidth = 370
+        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
+        Me.DataGridViewTextBoxColumn32.ReadOnly = True
+        Me.DataGridViewTextBoxColumn32.Width = 370
+        '
+        'DataGridViewTextBoxColumn33
+        '
+        Me.DataGridViewTextBoxColumn33.HeaderText = "DATE & TIME"
+        Me.DataGridViewTextBoxColumn33.MinimumWidth = 200
+        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
+        Me.DataGridViewTextBoxColumn33.ReadOnly = True
+        Me.DataGridViewTextBoxColumn33.Width = 200
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3037,11 +3050,11 @@ Partial Class frmMain
         Me.ClientSize = New System.Drawing.Size(1353, 815)
         Me.Controls.Add(Me.pnl_dashboard)
         Me.Controls.Add(Me.pnl_logs)
-        Me.Controls.Add(Me.pnl_sales)
-        Me.Controls.Add(Me.pnl_inventory)
-        Me.Controls.Add(Me.pnl_accounts)
-        Me.Controls.Add(Me.pnldeleteorder)
         Me.Controls.Add(Me.pnl_cashier)
+        Me.Controls.Add(Me.pnl_accounts)
+        Me.Controls.Add(Me.pnl_inventory)
+        Me.Controls.Add(Me.pnl_sales)
+        Me.Controls.Add(Me.pnldeleteorder)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlSide)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -3060,7 +3073,7 @@ Partial Class frmMain
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_logs.ResumeLayout(False)
         Me.pnl_logs.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgUserLogs, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_dashboard.ResumeLayout(False)
         Me.pnl_dashboard.PerformLayout()
@@ -3331,16 +3344,17 @@ Partial Class frmMain
     Friend WithEvents Label52 As Label
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents Label64 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgUserLogs As DataGridView
     Friend WithEvents Label65 As Label
     Friend WithEvents Label66 As Label
     Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents btn_logs As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btn_logout As Button
+    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn27 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn28 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn33 As DataGridViewTextBoxColumn
-    Friend WithEvents btn_logs As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents btn_logout As Button
 End Class

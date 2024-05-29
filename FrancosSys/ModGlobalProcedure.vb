@@ -1,4 +1,5 @@
-﻿Imports System.Security.Cryptography
+﻿Imports System.ComponentModel
+Imports System.Security.Cryptography
 Imports System.Text
 Imports System.Text.RegularExpressions
 Imports MySql.Data.MySqlClient
@@ -65,6 +66,32 @@ Module ModGlobalProcedure
             Next
             Return builder.ToString()
         End Using
+    End Function
+
+
+    Public Function SaveToLogs(log As String, action As String) As String
+        datRest = New DataTable
+        SqlAdapterRest = New MySqlDataAdapter
+        Dim datetime = currentDateTime
+
+        If action = "userSession" Then
+            Try
+                With command
+                    .Parameters.Clear() 'clear command parameters
+                    .CommandText = "procAddLogs" 'call stored procedure from mysql
+                    .CommandType = CommandType.StoredProcedure
+                    .Parameters.AddWithValue("@p_userposition", g_userposition)
+                    .Parameters.AddWithValue("@p_fullname", userFullname)
+                    .Parameters.AddWithValue("@p_useraction", log)
+                    .Parameters.AddWithValue("@p_datetime", datetime.ToString)
+                    .ExecuteNonQuery()
+                End With
+                '    MessageBox.Show("Record Successfully Save", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Catch ex As Exception
+                MessageBox.Show("" + ex.Message)
+            End Try
+        End If
+
     End Function
 
 End Module

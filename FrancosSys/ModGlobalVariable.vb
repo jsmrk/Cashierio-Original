@@ -25,4 +25,8 @@ Module ModGlobalVariable
     Public g_userposition As String
     Public totalprice, change, cash As String
 
+    Public userPosition As String
+    Public userFullname As String
+    Public currentDateTime As DateTime = DateTime.Now
+
 End Module

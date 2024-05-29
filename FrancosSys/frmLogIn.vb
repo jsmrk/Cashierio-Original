@@ -28,11 +28,12 @@ Public Class frmLogIn
                 datRest.Clear()
                 SqlAdapterRest.Fill(datRest)
                 g_userposition = cmbUserPosition.Text
+                userPosition = g_userposition
 
                 If datRest.Rows.Count > 0 Then
                     If g_userposition = "Admin" Then
-                        currentuser = datRest.Rows(row).Item("fullname").ToString
-                        frmMain.txtCurrentUser.Text = currentuser
+                        userFullname = datRest.Rows(row).Item("fullname").ToString
+                        frmMain.txtCurrentUser.Text = userFullname
                         g_username = txtusername.Text
                         frmMain.Show()
                         frmMain.btn_inventory.Show()
@@ -43,8 +44,8 @@ Public Class frmLogIn
                         frmMain.btn_sales.PerformClick()
                         frmMain.btn_dash.PerformClick()
                     Else
-                        currentuser = datRest.Rows(row).Item("fullname").ToString
-                        frmMain.txtCurrentUser.Text = currentuser
+                        userFullname = datRest.Rows(row).Item("fullname").ToString
+                        frmMain.txtCurrentUser.Text = userFullname
                         g_username = txtusername.Text
                         frmMain.Show()
                         frmMain.btn_inventory.Hide()
@@ -56,6 +57,7 @@ Public Class frmLogIn
                         frmMain.btn_sales.PerformClick()
                         frmMain.btn_dash.PerformClick()
                     End If
+                    SaveToLogs(log:="User Has Logged In", action:="userSession")
                     Me.Visible = False
                 Else
                     MessageBox.Show("User not found/Invalid Password", "Login", MessageBoxButtons.OK, MessageBoxIcon.Error)
