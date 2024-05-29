@@ -349,8 +349,8 @@ Partial Class frmMain
         'pnl_accounts
         '
         Me.pnl_accounts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pnl_accounts.Controls.Add(Me.pnl_AddUser)
         Me.pnl_accounts.Controls.Add(Me.btnRestore)
+        Me.pnl_accounts.Controls.Add(Me.pnl_AddUser)
         Me.pnl_accounts.Controls.Add(Me.btnBackup)
         Me.pnl_accounts.Controls.Add(Me.txtSearch)
         Me.pnl_accounts.Controls.Add(Me.Label50)
@@ -413,10 +413,10 @@ Partial Class frmMain
         Me.ListBox1.ForeColor = System.Drawing.Color.DarkRed
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Items.AddRange(New Object() {"*****PASSWORD MUST CONTAIN ATLEAST ", "8 CHARS AND 1 NUMERIC COMBINATION"})
-        Me.ListBox1.Location = New System.Drawing.Point(478, 228)
+        Me.ListBox1.Items.AddRange(New Object() {"Password should at least 8 characters long and ", "includes at least 1 special character, 1 number, ", "and 1 uppercase letter."})
+        Me.ListBox1.Location = New System.Drawing.Point(441, 228)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(265, 32)
+        Me.ListBox1.Size = New System.Drawing.Size(314, 48)
         Me.ListBox1.TabIndex = 98
         '
         'cmbGender
@@ -442,7 +442,7 @@ Partial Class frmMain
         'txtretypepassword
         '
         Me.txtretypepassword.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtretypepassword.Location = New System.Drawing.Point(569, 266)
+        Me.txtretypepassword.Location = New System.Drawing.Point(569, 283)
         Me.txtretypepassword.Name = "txtretypepassword"
         Me.txtretypepassword.Size = New System.Drawing.Size(175, 31)
         Me.txtretypepassword.TabIndex = 95
@@ -513,7 +513,7 @@ Partial Class frmMain
         Me.Label20.AutoSize = True
         Me.Label20.BackColor = System.Drawing.Color.Transparent
         Me.Label20.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(437, 272)
+        Me.Label20.Location = New System.Drawing.Point(437, 289)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(125, 22)
         Me.Label20.TabIndex = 88
