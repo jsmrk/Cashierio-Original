@@ -54,11 +54,12 @@ Module ModGlobalProcedure
 
     Public Function CheckPasswordStrength(password As String) As Boolean
         ' Check minimum length of 8 characters, at least 1 special character, at least 1 numeric character, and at least 1 uppercase letter
-        Dim regex As New Regex("^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$")
+        Dim regex As New Regex("^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&_])[A-Za-z\d@$!%*?&_]{8,}$")
         If regex.IsMatch(password) Then
             Return True
+        Else
+            Return False
         End If
-        Return False
     End Function
 
 

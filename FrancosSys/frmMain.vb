@@ -239,7 +239,7 @@ Public Class frmMain
     Private Sub btn_saveuser_Click(sender As Object, e As EventArgs) Handles btn_saveuser.Click
         Dim isStrongPass As Boolean = CheckPasswordStrength(txtPassword.Text)
 
-        If txtPassword.Text = txtretypepassword.Text AndAlso isStrongPass Then
+        If txtPassword.Text = txtretypepassword.Text And isStrongPass = True Then
             Try
                 ' Hash the password using SHA-256
                 Dim hashedPassword As String = HashPassword(txtPassword.Text)
@@ -270,8 +270,10 @@ Public Class frmMain
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
             End Try
+
             procClearAddUser()
             procDisplayAllUsers()
+
         ElseIf txtPassword.Text <> txtretypepassword.Text AndAlso isStrongPass Then
             ' Show not match error
             MessageBox.Show("Password Not Match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -307,9 +309,9 @@ Public Class frmMain
                 .ExecuteNonQuery()
                 MessageBox.Show("Account Successfully Deleted!", "Record Status", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                 Dim log = ("Deleted an account: " + dgUsers.CurrentRow.Cells(1).Value + " " + dgUsers.CurrentRow.Cells(2).Value)
+                SaveToLogs(log:=log, action:="userSession")
             End With
             'refresh/reload customer records in datagridview
-
             procDisplayAllUsers()
         Catch ex As Exception
             MessageBox.Show("" + ex.Message)
@@ -1421,11 +1423,13 @@ Public Class frmMain
 
 
     Private Sub btn_logout_Click_1(sender As Object, e As EventArgs) Handles btn_logout.Click
-        Me.Visible = False
-        frmLogIn.Visible = True
-        frmLogIn.txtPassword.Text = ""
-        frmLogIn.txtusername.Text = ""
-        frmLogIn.cmbUserPosition.Text = ""
+        'Me.Visible = False
+        'frmLogIn.Visible = True
+        'frmLogIn.txtPassword.Text = ""
+        'frmLogIn.txtusername.Text = ""
+        'frmLogIn.cmbUserPosition.Text = ""
+        Me.Dispose()
+        frmLogIn.Dispose()
         SaveToLogs(log:="User Has Logged Out", action:="userSession")
     End Sub
 
