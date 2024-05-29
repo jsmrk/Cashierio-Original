@@ -1449,4 +1449,8 @@ Public Class frmMain
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
 
     End Sub
+
+    Private Sub pnl_dashboard_Paint(sender As Object, e As PaintEventArgs) Handles pnl_dashboard.Paint
+
+    End Sub
 End Class

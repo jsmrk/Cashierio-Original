@@ -77,8 +77,8 @@
     <Reference Include="Google.Protobuf, Version=3.25.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.25.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI">
-      <HintPath>C:\Users\AlambanBaguio\Downloads\Compressed\framwork-main\framwork-main\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Downloads\Compressed\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
@@ -115,6 +115,7 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.2\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
@@ -282,9 +283,6 @@
     <None Include="Resources\logo1 - Copy.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\lechonmanok.png" />
   </ItemGroup>
   <ItemGroup>
@@ -361,6 +359,126 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_acc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\441531155_1003876667747870_8480613760725457185_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\436259087_818907032998427_7702860852581434417_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\441940190_975641470777975_1407653756275588778_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\441909974_2018641858612191_9092270467872790741_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-resize-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-resize.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app-version.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-checked1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-default1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_230182799_SuoqXG9zd8J70Bhe6NKVkiHTvHVEMgee.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

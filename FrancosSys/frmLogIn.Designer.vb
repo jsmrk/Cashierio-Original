@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmLogIn
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,57 +20,67 @@ Partial Class frmLogIn
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogIn))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.txtusername = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnLogIn = New System.Windows.Forms.Button()
-        Me.txtusername = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.cmbUserPosition = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtpassword = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.FrancosSys.My.Resources.Resources.LOGO_resize_removebg_preview
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(37, 38)
+        Me.PictureBox1.Location = New System.Drawing.Point(253, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(301, 185)
+        Me.PictureBox1.Size = New System.Drawing.Size(322, 199)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Panel1
+        'Guna2ControlBox1
         '
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.btnLogIn)
-        Me.Panel1.Controls.Add(Me.txtusername)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.cmbUserPosition)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.txtPassword)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(50, 43)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(366, 468)
-        Me.Panel1.TabIndex = 1
+        Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2ControlBox1.FillColor = System.Drawing.Color.White
+        Me.Guna2ControlBox1.HoverState.Parent = Me.Guna2ControlBox1
+        Me.Guna2ControlBox1.IconColor = System.Drawing.Color.Black
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(750, 5)
+        Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
+        Me.Guna2ControlBox1.ShadowDecoration.Parent = Me.Guna2ControlBox1
+        Me.Guna2ControlBox1.Size = New System.Drawing.Size(45, 29)
+        Me.Guna2ControlBox1.TabIndex = 7
         '
-        'Button2
+        'txtusername
         '
-        Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(161, 402)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(73, 31)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "EXIT"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.txtusername.BorderRadius = 10
+        Me.txtusername.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtusername.DefaultText = ""
+        Me.txtusername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtusername.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtusername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtusername.DisabledState.Parent = Me.txtusername
+        Me.txtusername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtusername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtusername.FocusedState.Parent = Me.txtusername
+        Me.txtusername.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtusername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtusername.HoverState.Parent = Me.txtusername
+        Me.txtusername.IconLeft = Global.FrancosSys.My.Resources.Resources.user
+        Me.txtusername.Location = New System.Drawing.Point(86, 70)
+        Me.txtusername.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtusername.Name = "txtusername"
+        Me.txtusername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtusername.PlaceholderText = "  Username"
+        Me.txtusername.SelectedText = ""
+        Me.txtusername.ShadowDecoration.Parent = Me.txtusername
+        Me.txtusername.Size = New System.Drawing.Size(228, 47)
+        Me.txtusername.TabIndex = 5
         '
         'btnLogIn
         '
@@ -78,91 +88,96 @@ Partial Class frmLogIn
         Me.btnLogIn.FlatAppearance.BorderSize = 0
         Me.btnLogIn.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogIn.ForeColor = System.Drawing.Color.Black
-        Me.btnLogIn.Location = New System.Drawing.Point(240, 398)
+        Me.btnLogIn.Location = New System.Drawing.Point(113, 188)
         Me.btnLogIn.Name = "btnLogIn"
-        Me.btnLogIn.Size = New System.Drawing.Size(97, 37)
+        Me.btnLogIn.Size = New System.Drawing.Size(161, 45)
         Me.btnLogIn.TabIndex = 4
         Me.btnLogIn.Text = "LOG IN"
         Me.btnLogIn.UseVisualStyleBackColor = False
         '
-        'txtusername
-        '
-        Me.txtusername.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtusername.Location = New System.Drawing.Point(149, 310)
-        Me.txtusername.Name = "txtusername"
-        Me.txtusername.Size = New System.Drawing.Size(188, 31)
-        Me.txtusername.TabIndex = 2
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(40, 315)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 19)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "USERNAME:"
-        '
         'cmbUserPosition
         '
         Me.cmbUserPosition.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbUserPosition.ForeColor = System.Drawing.Color.Black
         Me.cmbUserPosition.FormattingEnabled = True
         Me.cmbUserPosition.Items.AddRange(New Object() {"Admin", "Employee"})
-        Me.cmbUserPosition.Location = New System.Drawing.Point(44, 269)
+        Me.cmbUserPosition.Location = New System.Drawing.Point(86, 27)
         Me.cmbUserPosition.Name = "cmbUserPosition"
-        Me.cmbUserPosition.Size = New System.Drawing.Size(293, 29)
+        Me.cmbUserPosition.Size = New System.Drawing.Size(228, 29)
         Me.cmbUserPosition.TabIndex = 1
         Me.cmbUserPosition.Text = "User Type"
         '
-        'Label1
+        'txtpassword
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(40, 351)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 19)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "PASSWORD:"
+        Me.txtpassword.BorderRadius = 10
+        Me.txtpassword.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtpassword.DefaultText = ""
+        Me.txtpassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtpassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtpassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtpassword.DisabledState.Parent = Me.txtpassword
+        Me.txtpassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtpassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtpassword.FocusedState.Parent = Me.txtpassword
+        Me.txtpassword.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtpassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtpassword.HoverState.Parent = Me.txtpassword
+        Me.txtpassword.IconLeft = Global.FrancosSys.My.Resources.Resources.padlock
+        Me.txtpassword.Location = New System.Drawing.Point(86, 124)
+        Me.txtpassword.Name = "txtpassword"
+        Me.txtpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtpassword.PlaceholderText = "  Password"
+        Me.txtpassword.SelectedText = ""
+        Me.txtpassword.ShadowDecoration.Parent = Me.txtpassword
+        Me.txtpassword.Size = New System.Drawing.Size(228, 42)
+        Me.txtpassword.TabIndex = 6
+        Me.txtpassword.UseSystemPasswordChar = True
         '
-        'txtPassword
+        'Guna2CustomGradientPanel1
         '
-        Me.txtPassword.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(149, 347)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(188, 31)
-        Me.txtPassword.TabIndex = 3
+        Me.Guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2CustomGradientPanel1.BorderRadius = 10
+        Me.Guna2CustomGradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot
+        Me.Guna2CustomGradientPanel1.Controls.Add(Me.txtpassword)
+        Me.Guna2CustomGradientPanel1.Controls.Add(Me.cmbUserPosition)
+        Me.Guna2CustomGradientPanel1.Controls.Add(Me.btnLogIn)
+        Me.Guna2CustomGradientPanel1.Controls.Add(Me.txtusername)
+        Me.Guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Cyan
+        Me.Guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Silver
+        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(216, 240)
+        Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
+        Me.Guna2CustomGradientPanel1.ShadowDecoration.Parent = Me.Guna2CustomGradientPanel1
+        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(392, 248)
+        Me.Guna2CustomGradientPanel1.TabIndex = 6
         '
         'frmLogIn
         '
         Me.AcceptButton = Me.btnLogIn
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.FrancosSys.My.Resources.Resources._360_F_230182799_SuoqXG9zd8J70Bhe6NKVkiHTvHVEMgee
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CancelButton = Me.Button2
-        Me.ClientSize = New System.Drawing.Size(475, 554)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(800, 500)
+        Me.Controls.Add(Me.Guna2ControlBox1)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Guna2CustomGradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmLogIn"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmLogIn"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.Guna2CustomGradientPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents txtusername As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnLogIn As Button
-    Friend WithEvents txtusername As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents cmbUserPosition As ComboBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents txtpassword As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
 End Class

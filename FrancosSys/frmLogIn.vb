@@ -5,7 +5,7 @@ Public Class frmLogIn
     Dim currentuser As String
     Private Sub frmLogIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         chkDatabaseConnection()
-        txtPassword.Text = ""
+        txtpassword.Text = ""
         txtusername.Text = ""
     End Sub
 
@@ -75,9 +75,33 @@ Public Class frmLogIn
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         Me.Dispose()
         frmMain.Dispose()
+    End Sub
+
+    Private Sub txtusername_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Guna2ControlBox1_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox1.Click
+        Me.Dispose()
+    End Sub
+
+    Private Sub txtpassword_TextChanged(sender As Object, e As EventArgs) Handles txtpassword.TextChanged
+
+    End Sub
+
+    Private Sub txtusername_TextChanged_1(sender As Object, e As EventArgs) Handles txtusername.TextChanged
+
+    End Sub
+
+    Private Sub cmbUserPosition_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbUserPosition.SelectedIndexChanged
+
     End Sub
 
 
