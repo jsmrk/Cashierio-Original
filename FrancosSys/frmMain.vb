@@ -263,7 +263,7 @@ Public Class frmMain
 
                 MessageBox.Show("Successfully Created Account", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-                Dim log = (g_userposition + " " + g_userposition + " added an account: " + g_userposition + " " + txtlastname.Text)
+                Dim log = ("Added an account: " + cmbPosition.Text + " " + txtlastname.Text)
                 SaveToLogs(log:=log, action:="userSession")
 
                 pnl_AddUser.Visible = False
@@ -306,9 +306,10 @@ Public Class frmMain
                 .Parameters.AddWithValue("@p_id", CInt(dgUsers.CurrentRow.Cells(0).Value))
                 .ExecuteNonQuery()
                 MessageBox.Show("Account Successfully Deleted!", "Record Status", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                Dim log = ("Deleted an account: " + dgUsers.CurrentRow.Cells(1).Value + " " + dgUsers.CurrentRow.Cells(2).Value)
             End With
             'refresh/reload customer records in datagridview
-            Dim log = (g_userposition + " " + g_userposition + " deleted an account: " + dgUsers.CurrentRow.Cells(1).Value + " " + dgUsers.CurrentRow.Cells(2).Value)
+
             procDisplayAllUsers()
         Catch ex As Exception
             MessageBox.Show("" + ex.Message)
