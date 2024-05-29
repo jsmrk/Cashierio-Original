@@ -38,7 +38,7 @@ Partial Class frmLogIn
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = Global.FrancosSys.My.Resources.Resources.LOGO_resize_removebg_preview
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(253, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(123, 33)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(322, 199)
         Me.PictureBox1.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class frmLogIn
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.White
         Me.Guna2ControlBox1.HoverState.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.Black
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(750, 5)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(523, 12)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
         Me.Guna2ControlBox1.ShadowDecoration.Parent = Me.Guna2ControlBox1
         Me.Guna2ControlBox1.Size = New System.Drawing.Size(45, 29)
@@ -72,23 +72,24 @@ Partial Class frmLogIn
         Me.txtusername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtusername.HoverState.Parent = Me.txtusername
         Me.txtusername.IconLeft = Global.FrancosSys.My.Resources.Resources.user
-        Me.txtusername.Location = New System.Drawing.Point(86, 70)
+        Me.txtusername.Location = New System.Drawing.Point(55, 123)
         Me.txtusername.Margin = New System.Windows.Forms.Padding(4)
         Me.txtusername.Name = "txtusername"
         Me.txtusername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtusername.PlaceholderText = "  Username"
         Me.txtusername.SelectedText = ""
         Me.txtusername.ShadowDecoration.Parent = Me.txtusername
-        Me.txtusername.Size = New System.Drawing.Size(228, 47)
+        Me.txtusername.Size = New System.Drawing.Size(267, 49)
         Me.txtusername.TabIndex = 5
         '
         'btnLogIn
         '
-        Me.btnLogIn.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(194, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.btnLogIn.BackColor = System.Drawing.Color.White
+        Me.btnLogIn.BackgroundImage = Global.FrancosSys.My.Resources.Resources._360_F_230182799_SuoqXG9zd8J70Bhe6NKVkiHTvHVEMgee
         Me.btnLogIn.FlatAppearance.BorderSize = 0
         Me.btnLogIn.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogIn.ForeColor = System.Drawing.Color.Black
-        Me.btnLogIn.Location = New System.Drawing.Point(113, 188)
+        Me.btnLogIn.Location = New System.Drawing.Point(109, 252)
         Me.btnLogIn.Name = "btnLogIn"
         Me.btnLogIn.Size = New System.Drawing.Size(161, 45)
         Me.btnLogIn.TabIndex = 4
@@ -101,9 +102,9 @@ Partial Class frmLogIn
         Me.cmbUserPosition.ForeColor = System.Drawing.Color.Black
         Me.cmbUserPosition.FormattingEnabled = True
         Me.cmbUserPosition.Items.AddRange(New Object() {"Admin", "Employee"})
-        Me.cmbUserPosition.Location = New System.Drawing.Point(86, 27)
+        Me.cmbUserPosition.Location = New System.Drawing.Point(55, 71)
         Me.cmbUserPosition.Name = "cmbUserPosition"
-        Me.cmbUserPosition.Size = New System.Drawing.Size(228, 29)
+        Me.cmbUserPosition.Size = New System.Drawing.Size(267, 29)
         Me.cmbUserPosition.TabIndex = 1
         Me.cmbUserPosition.Text = "User Type"
         '
@@ -123,13 +124,14 @@ Partial Class frmLogIn
         Me.txtpassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtpassword.HoverState.Parent = Me.txtpassword
         Me.txtpassword.IconLeft = Global.FrancosSys.My.Resources.Resources.padlock
-        Me.txtpassword.Location = New System.Drawing.Point(86, 124)
+        Me.txtpassword.Location = New System.Drawing.Point(55, 181)
+        Me.txtpassword.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtpassword.Name = "txtpassword"
         Me.txtpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtpassword.PlaceholderText = "  Password"
         Me.txtpassword.SelectedText = ""
         Me.txtpassword.ShadowDecoration.Parent = Me.txtpassword
-        Me.txtpassword.Size = New System.Drawing.Size(228, 42)
+        Me.txtpassword.Size = New System.Drawing.Size(267, 49)
         Me.txtpassword.TabIndex = 6
         Me.txtpassword.UseSystemPasswordChar = True
         '
@@ -142,14 +144,10 @@ Partial Class frmLogIn
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.cmbUserPosition)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.btnLogIn)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.txtusername)
-        Me.Guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Cyan
-        Me.Guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Silver
-        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(216, 240)
+        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(100, 257)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Me.Guna2CustomGradientPanel1.ShadowDecoration.Parent = Me.Guna2CustomGradientPanel1
-        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(392, 248)
+        Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(376, 351)
         Me.Guna2CustomGradientPanel1.TabIndex = 6
         '
         'frmLogIn
@@ -159,7 +157,7 @@ Partial Class frmLogIn
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.FrancosSys.My.Resources.Resources._360_F_230182799_SuoqXG9zd8J70Bhe6NKVkiHTvHVEMgee
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(800, 500)
+        Me.ClientSize = New System.Drawing.Size(580, 650)
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Guna2CustomGradientPanel1)

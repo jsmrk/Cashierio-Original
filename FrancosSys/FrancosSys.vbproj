@@ -480,6 +480,15 @@
   <ItemGroup>
     <None Include="Resources\360_F_230182799_SuoqXG9zd8J70Bhe6NKVkiHTvHVEMgee.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_533443651_F8GG1TNf7BWdeW5XWFqzoGJXws2lBPyr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_9oD9bg_2Lzk96ZQ1zWNofA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-summer-gradient-background-blue-yellow_53876-120751.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -235,6 +235,9 @@
   <data name="account" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="beautiful_summer_gradient_background_blue_yellow_53876_120751" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beautiful-summer-gradient-background-blue-yellow_53876-120751.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cashier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cashier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -277,7 +280,13 @@
   <data name="user_default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_1_9oD9bg_2Lzk96ZQ1zWNofA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1_9oD9bg_2Lzk96ZQ1zWNofA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_360_F_230182799_SuoqXG9zd8J70Bhe6NKVkiHTvHVEMgee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\360_F_230182799_SuoqXG9zd8J70Bhe6NKVkiHTvHVEMgee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_360_F_533443651_F8GG1TNf7BWdeW5XWFqzoGJXws2lBPyr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\360_F_533443651_F8GG1TNf7BWdeW5XWFqzoGJXws2lBPyr.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
