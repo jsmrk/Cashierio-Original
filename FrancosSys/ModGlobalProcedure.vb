@@ -10,6 +10,7 @@ Imports Google.Apis.Services
 Imports Google.Apis.Upload
 Imports System.IO
 Imports System.Threading
+Imports MySql.Data.MySqlClient.MySqlBackup
 
 Module ModGlobalProcedure
     Public Function fncConnectToDatabase() As Boolean
@@ -101,67 +102,155 @@ Module ModGlobalProcedure
 
     End Function
 
-    Public Sub ExportDatabase()
-        Try
-            Dim fileName As String = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) & "\cashierio-backup.sql"
-            Dim process As New Process()
-            process.StartInfo.FileName = "cmd.exe"
-            process.StartInfo.UseShellExecute = False
-            process.StartInfo.RedirectStandardInput = True
-            process.StartInfo.RedirectStandardOutput = True
-            process.StartInfo.RedirectStandardError = True
-            process.StartInfo.CreateNoWindow = True
+    Public Sub ExportDatabase(where As String)
 
-            process.Start()
 
-            Dim cmd As String = $"mysqldump -u root -p 1234 cashieriosys > ""{fileName}"""
-            process.StandardInput.WriteLine(cmd)
-            process.StandardInput.Close()
+        If where = "login" Then
+            Try
+                ' Specify the directory path
+                Dim directoryPath As String = "C:\cashierio-backups"
 
-            process.WaitForExit()
-            process.Close()
-        Catch ex As Exception
-            MessageBox.Show("An error occurred while exporting the database: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+                ' Check if the directory exists, if not, create it
+                If Not Directory.Exists(directoryPath) Then
+                    Directory.CreateDirectory(directoryPath)
+                End If
+
+                ' Construct the file name with the desired directory path and file name
+                Dim fileName As String = Path.Combine(directoryPath, "cashierio-backup.sql")
+
+                Dim connectionString As String = "SERVER=localhost;DATABASE=cashieriosys;USERNAME=root;PASSWORD=1234;PORT=3306"
+
+                Using con As New MySqlConnection(connectionString)
+                    con.Open()
+
+                    Using cmd As New MySqlCommand()
+                        cmd.Connection = con
+
+                        Dim mb As MySqlBackup = New MySqlBackup(cmd)
+                        mb.ExportToFile(fileName)
+                        SaveToLogs(log:="Database Backup saved locally (Automatic)", action:="userSession")
+                    End Using
+                End Using
+            Catch ex As Exception
+                MessageBox.Show("Backup operation failed: " & ex.Message)
+            End Try
+        Else
+            Try
+                Dim desktopPath As String = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
+                Dim backup As New SaveFileDialog
+
+                backup.InitialDirectory = desktopPath
+                backup.Title = "cashierio-backup"
+                backup.CheckFileExists = False
+                backup.CheckPathExists = False
+                backup.DefaultExt = "sql"
+                backup.Filter = "sql files (*.sql)|*.sql|All files (*.*)|*.*"
+                backup.RestoreDirectory = True
+
+                Dim connectionString As String = "SERVER=localhost;DATABASE=cashieriosys;USERNAME=root;PASSWORD=1234;PORT=3306"
+
+                If backup.ShowDialog = System.Windows.Forms.DialogResult.OK Then
+                    Using con As New MySqlConnection(connectionString)
+                        con.Open()
+
+                        Using cmd As New MySqlCommand()
+                            cmd.Connection = con
+
+                            Dim mb As MySqlBackup = New MySqlBackup(cmd)
+                            mb.ExportToFile(backup.FileName)
+                            MessageBox.Show("Database backup created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            SaveToLogs(log:="Database Backup saved Locally (Manual)", action:="userSession")
+                        End Using
+                    End Using
+                Else
+                    Exit Sub
+                End If
+            Catch ex As Exception
+                MessageBox.Show("Backup operation failed: " & ex.Message)
+            End Try
+        End If
+
     End Sub
 
 
-    Public Sub UploadFileToGoogleDrive()
-        Dim filePath As String = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) & "\cashierio-backup.sql"
 
-        Dim clientId As String = "542851119247-rt8rjgbvfh2hcc5oeaegdl9pftqhn4ki.apps.googleusercontent.com"
-        Dim clientSecret As String = "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"
 
-        Dim credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-            New ClientSecrets With {
-                .ClientId = clientId,
-                .ClientSecret = clientSecret
-            },
-            {DriveService.Scope.DriveFile},
-            "user",
-            CancellationToken.None).Result
+    Public Sub UploadFileToGoogleDrive(where As String)
+        If where = "login" Then
+            Dim filePath As String = "C:\cashierio-backups" & "\cashierio-backup.sql"
 
-        Dim service = New DriveService(New BaseClientService.Initializer() With {
-            .HttpClientInitializer = credential,
-            .ApplicationName = "cashierio-original"
-        })
+            Dim clientId As String = "542851119247-rt8rjgbvfh2hcc5oeaegdl9pftqhn4ki.apps.googleusercontent.com"
+            Dim clientSecret As String = "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"
 
-        Dim fileMetadata = New Google.Apis.Drive.v3.Data.File() With {
-            .Name = "backup.sql"
-        }
-        Dim fileStream = New FileStream(filePath, FileMode.Open, FileAccess.Read)
+            Dim credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                New ClientSecrets With {
+                    .ClientId = clientId,
+                    .ClientSecret = clientSecret
+                },
+                {DriveService.Scope.DriveFile},
+                "user",
+                CancellationToken.None).Result
 
-        Dim request = service.Files.Create(fileMetadata, fileStream, "application/sql")
-        request.Fields = "id"
-        Dim uploadResult = request.Upload()
+            Dim service = New DriveService(New BaseClientService.Initializer() With {
+                .HttpClientInitializer = credential,
+                .ApplicationName = "cashierio-original"
+            })
 
-        If uploadResult.Status = UploadStatus.Failed Then
-            Console.WriteLine("Upload Failed: " & uploadResult.Exception.Message)
+            Dim fileMetadata = New Google.Apis.Drive.v3.Data.File() With {
+                .Name = "cashierio-backup.sql"
+            }
+            Dim fileStream = New FileStream(filePath, FileMode.Open, FileAccess.Read)
+
+            Dim request = service.Files.Create(fileMetadata, fileStream, "application/sql")
+            request.Fields = "id"
+            Dim uploadResult = request.Upload()
+
+            If uploadResult.Status = UploadStatus.Failed Then
+                Console.WriteLine("Upload Failed: " & uploadResult.Exception.Message)
+            Else
+                Console.WriteLine("File Uploaded Successfully!")
+                SaveToLogs(log:="Database Backup Uploaded to Google Drive (Automatic)", action:="userSession")
+            End If
+
+            fileStream.Close()
         Else
-            Console.WriteLine("File Uploaded Successfully!")
-        End If
+            Dim filePath As String = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) & "\cashierio-backup.sql"
 
-        fileStream.Close()
+            Dim clientId As String = "542851119247-rt8rjgbvfh2hcc5oeaegdl9pftqhn4ki.apps.googleusercontent.com"
+            Dim clientSecret As String = "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"
+
+            Dim credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                New ClientSecrets With {
+                    .ClientId = clientId,
+                    .ClientSecret = clientSecret
+                },
+                {DriveService.Scope.DriveFile},
+                "user",
+                CancellationToken.None).Result
+
+            Dim service = New DriveService(New BaseClientService.Initializer() With {
+                .HttpClientInitializer = credential,
+                .ApplicationName = "cashierio-original"
+            })
+
+            Dim fileMetadata = New Google.Apis.Drive.v3.Data.File() With {
+                .Name = "cashierio-backup.sql"
+            }
+            Dim fileStream = New FileStream(filePath, FileMode.Open, FileAccess.Read)
+
+            Dim request = service.Files.Create(fileMetadata, fileStream, "application/sql")
+            request.Fields = "id"
+            Dim uploadResult = request.Upload()
+
+            If uploadResult.Status = UploadStatus.Failed Then
+                Console.WriteLine("Upload Failed: " & uploadResult.Exception.Message)
+            Else
+                Console.WriteLine("File Uploaded Successfully!")
+                SaveToLogs(log:="Database Backup Uploaded to Google Drive (Manual)", action:="userSession")
+            End If
+
+            fileStream.Close()
+        End If
     End Sub
 
 End Module

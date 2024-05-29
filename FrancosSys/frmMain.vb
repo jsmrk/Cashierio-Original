@@ -1429,7 +1429,8 @@ Public Class frmMain
     End Sub
 
     Private Sub btnBackup_Click(sender As Object, e As EventArgs) Handles btnBackup.Click
-        ExportDatabase()
-        UploadFileToGoogleDrive()
+        ExportDatabase("")
+        UploadFileToGoogleDrive("")
     End Sub
+
 End Class

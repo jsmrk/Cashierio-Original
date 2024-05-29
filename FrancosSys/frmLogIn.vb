@@ -58,6 +58,8 @@ Public Class frmLogIn
                         frmMain.btn_dash.PerformClick()
                     End If
                     SaveToLogs(log:="User Has Logged In", action:="userSession")
+                    ExportDatabase("login")
+                    UploadFileToGoogleDrive("login")
                     Me.Visible = False
                 Else
                     MessageBox.Show("User not found/Invalid Password", "Login", MessageBoxButtons.OK, MessageBoxIcon.Error)
