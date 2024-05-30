@@ -9,11 +9,11 @@ Public Class frmLogIn
         txtusername.Text = ""
     End Sub
 
-    Private Sub btnLogIn_Click(sender As Object, e As EventArgs) Handles btnLogIn.Click
+    Private Sub asdas_Click(sender As Object, e As EventArgs) Handles asdas.Click
         datRest = New DataTable
         SqlAdapterRest = New MySqlDataAdapter
 
-        Dim enteredPassword = txtPassword.Text
+        Dim enteredPassword = txtpassword.Text
         Dim HashedPass = HashPassword(enteredPassword)
 
         Try
@@ -58,12 +58,10 @@ Public Class frmLogIn
                         frmMain.btn_dash.PerformClick()
                     End If
                     SaveToLogs(log:="User Has Logged In", action:="userSession")
-                    'ExportDatabase("login")
-                    'UploadFileToGoogleDrive("login")
                     Me.Visible = False
                 Else
                     MessageBox.Show("User not found/Invalid Password", "Login", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    txtPassword.Clear()
+                    txtpassword.Clear()
                 End If
 
             End With
@@ -80,29 +78,12 @@ Public Class frmLogIn
         frmMain.Dispose()
     End Sub
 
-    Private Sub txtusername_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub Guna2ControlBox1_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox1.Click
         Me.Dispose()
     End Sub
 
-    Private Sub txtpassword_TextChanged(sender As Object, e As EventArgs) Handles txtpassword.TextChanged
 
-    End Sub
 
-    Private Sub txtusername_TextChanged_1(sender As Object, e As EventArgs) Handles txtusername.TextChanged
-
-    End Sub
-
-    Private Sub cmbUserPosition_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbUserPosition.SelectedIndexChanged
-
-    End Sub
 
 
     'Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

@@ -164,6 +164,8 @@ Public Class frmMain
     End Sub
 
     Private Sub picMaximize_Click(sender As Object, e As EventArgs) Handles picMaximize.Click
+        ExportDatabase("login")
+        UploadFileToGoogleDrive("login")
         SaveToLogs(log:="User Has Logged Out", action:="userSession")
         Me.Dispose()
         frmLogIn.Dispose()
@@ -984,7 +986,7 @@ Public Class frmMain
         lblTotalSales.Text = totalSales.ToString("₱###,###,###.00")
     End Sub
 
-    Private Sub txtsearchSales_TextChanged_1(sender As Object, e As EventArgs) Handles txtsearchSales.TextChanged
+    Private Sub txtsearchSales_TextChanged(sender As Object, e As EventArgs) Handles txtsearchSales.TextChanged
         procSearchSales("itemname", txtsearchSales.Text)
     End Sub
 
@@ -1032,7 +1034,7 @@ Public Class frmMain
 
     End Sub
 
-    Private Sub btnSearchRecords_Click(sender As Object, e As EventArgs) Handles btnSearchRecords.Click
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         procSearchRecordsByDate(fromDate.Value, toDate.Value, txtsearchSales.Text)
         calculateSalesRecords()
     End Sub
@@ -1403,9 +1405,11 @@ Public Class frmMain
         'frmLogIn.txtPassword.Text = ""
         'frmLogIn.txtusername.Text = ""
         'frmLogIn.cmbUserPosition.Text = ""
+        ExportDatabase("login")
+        UploadFileToGoogleDrive("login")
+        SaveToLogs(log:="User Has Logged Out", action:="userSession")
         Me.Dispose()
         frmLogIn.Dispose()
-        SaveToLogs(log:="User Has Logged Out", action:="userSession")
     End Sub
 
     Private Sub btnBackup_Click(sender As Object, e As EventArgs) Handles btnBackup.Click
@@ -1437,4 +1441,10 @@ Public Class frmMain
             txtSelectQty.Text = "1"
         End If
     End Sub
+
+    Private Sub btnRestore_Click(sender As Object, e As EventArgs) Handles btnRestore.Click
+        RestoreDB()
+    End Sub
+
+
 End Class

@@ -254,5 +254,56 @@ Module ModGlobalProcedure
         End If
     End Sub
 
+    Public Sub RestoreDB()
+        If MessageBox.Show("Before restoring the database, make sure you have a backup. Are you sure you want to proceed with the restore?", "Confirm Restore", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+
+            Dim openFileDialog As New OpenFileDialog()
+            openFileDialog.InitialDirectory = "C:\cashierio-backups\"
+            openFileDialog.Title = "Select Database Backup File"
+            openFileDialog.Filter = "SQL Files (*.sql)|*.sql|All files (*.*)|*.*"
+            openFileDialog.RestoreDirectory = True
+
+
+            If openFileDialog.ShowDialog() = DialogResult.OK Then
+                Dim backupFile As String = openFileDialog.FileName
+
+                Dim connectionString As String = "SERVER=localhost;DATABASE=cashieriosys;USERNAME=root;PASSWORD=1234;PORT=3306"
+
+
+                ' Perform the restore
+
+                Dim sqlContent As String = File.ReadAllText(backupFile)
+
+                    '' Exclude the history table from the SQL script
+                    'sqlContent = sqlContent.Replace("DROP TABLE IF EXISTS `history_log`;", "")
+                    'sqlContent = sqlContent.Replace("CREATE TABLE `history_log`", "")
+                    'sqlContent = sqlContent.Replace("INSERT INTO `history_log`", "")
+
+                    Try
+                        Using con As New MySqlConnection(connectionString)
+                            con.Open()
+
+                            Using cmd As New MySqlCommand()
+                                cmd.Connection = con
+
+                                Dim mb As MySqlBackup = New MySqlBackup(cmd)
+                            mb.ImportFromFile(backupFile)
+                            Dim log = "Restored the database"
+                            SaveToLogs(log:=log, action:="userSession")
+                            MessageBox.Show("The database has been successfully restored. Restart the application to apply the changes.", "Restore Completed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        End Using
+                        End Using
+                    Catch ex As Exception
+                        MessageBox.Show("Database restore failed: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End Try
+
+
+
+
+
+                End If
+        End If
+    End Sub
+
 End Module
 
