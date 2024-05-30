@@ -89,7 +89,7 @@ Partial Class frmLogIn
         Me.btnLogIn.FlatAppearance.BorderSize = 0
         Me.btnLogIn.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogIn.ForeColor = System.Drawing.Color.Black
-        Me.btnLogIn.Location = New System.Drawing.Point(109, 252)
+        Me.btnLogIn.Location = New System.Drawing.Point(109, 267)
         Me.btnLogIn.Name = "btnLogIn"
         Me.btnLogIn.Size = New System.Drawing.Size(161, 45)
         Me.btnLogIn.TabIndex = 4

@@ -727,31 +727,6 @@ Public Class frmMain
         lbltotalorder.Text = sumOrder.ToString()
     End Sub
 
-    Private Sub dgSelectCashier_CellClick(sender As Object, e As DataGridViewCellEventArgs)
-        procSelectItemToBuy()
-        txtSelectedItem.Text = Citemname
-        pnlQTY.Visible = True
-        txtSelectQty.Text = "1"
-        pnlQTY.BringToFront()
-    End Sub
-
-    Private Sub btnCancelSelectItem_Click(sender As Object, e As EventArgs)
-        pnlQTY.Visible = False
-        txtSelectQty.Text = "1"
-    End Sub
-
-    Private Sub btnConfirmSelectItem_Click(sender As Object, e As EventArgs)
-        If CDbl(txtSelectQty.Text) <= Cstock Then
-            dgCashier.Rows.Add(txtSelectQty.Text, Citemname, Citemprice * CDbl(txtSelectQty.Text), DateTime.Now.ToString("HH:mm:ss"), DateTime.Now.ToString("MM/dd/yyyy"))
-            txtSelectQty.Text = "1"
-            pnlQTY.Visible = False
-            totalOrder()
-        Else
-            MessageBox.Show("Quantity more than the stock Available", "Invalid Quantity", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            txtSelectQty.Text = "1"
-        End If
-    End Sub
-
     Private Sub txtSearchSelectItem_TextChanged(sender As Object, e As EventArgs) Handles txtSearchSelectItem.TextChanged
         procSearchSelectItem("itemname", txtSearchSelectItem.Text)
     End Sub
@@ -1438,31 +1413,28 @@ Public Class frmMain
         UploadFileToGoogleDrive("")
     End Sub
 
-    Private Sub lblmonthlysale_TextChanged(sender As Object, e As EventArgs) Handles lblmonthlysale.TextChanged
-
+    Private Sub btnCancelSelectItem_Click(sender As Object, e As EventArgs) Handles btnCancelSelectItem.Click
+        pnlQTY.Visible = False
+        txtSelectQty.Text = "1"
     End Sub
 
-    Private Sub lblyearlysale_TextChanged(sender As Object, e As EventArgs) Handles lblyearlysale.TextChanged
-
+    Private Sub dgSelectCashier_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles dgSelectCashier.CellContentClick
+        procSelectItemToBuy()
+        txtSelectedItem.Text = Citemname
+        pnlQTY.Visible = True
+        txtSelectQty.Text = "1"
+        pnlQTY.BringToFront()
     End Sub
 
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub pnl_dashboard_Paint(sender As Object, e As PaintEventArgs) Handles pnl_dashboard.Paint
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Panel9_Paint(sender As Object, e As PaintEventArgs) Handles Panel9.Paint
-
-    End Sub
-
-    Private Sub Label53_Click(sender As Object, e As EventArgs) Handles Label53.Click
-
+    Private Sub btnConfirmSelectItem_Click(sender As Object, e As EventArgs) Handles btnConfirmSelectItem.Click
+        If CDbl(txtSelectQty.Text) <= Cstock Then
+            dgCashier.Rows.Add(txtSelectQty.Text, Citemname, Citemprice * CDbl(txtSelectQty.Text), DateTime.Now.ToString("HH:mm:ss"), DateTime.Now.ToString("MM/dd/yyyy"))
+            txtSelectQty.Text = "1"
+            pnlQTY.Visible = False
+            totalOrder()
+        Else
+            MessageBox.Show("Quantity more than the stock Available", "Invalid Quantity", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            txtSelectQty.Text = "1"
+        End If
     End Sub
 End Class
