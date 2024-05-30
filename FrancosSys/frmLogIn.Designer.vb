@@ -38,7 +38,7 @@ Partial Class frmLogIn
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = Global.FrancosSys.My.Resources.Resources.LOGO_resize_removebg_preview
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(123, 33)
+        Me.PictureBox1.Location = New System.Drawing.Point(130, 35)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(322, 199)
         Me.PictureBox1.TabIndex = 0
@@ -144,7 +144,7 @@ Partial Class frmLogIn
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.cmbUserPosition)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.btnLogIn)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.txtusername)
-        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(100, 257)
+        Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(107, 259)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
         Me.Guna2CustomGradientPanel1.ShadowDecoration.Parent = Me.Guna2CustomGradientPanel1
         Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(376, 351)
