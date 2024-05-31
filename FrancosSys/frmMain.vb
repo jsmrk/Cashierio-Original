@@ -334,6 +334,10 @@ Public Class frmMain
                 SqlAdapterRest.SelectCommand = command
                 datRest.Clear()
                 SqlAdapterRest.Fill(datRest)
+
+                datRest.DefaultView.Sort = "ID DESC"
+                datRest = datRest.DefaultView.ToTable()
+
                 lbltotalusers.Text = "Total Records :" & datRest.Rows.Count
                 If datRest.Rows.Count > 0 Then
                     dgInventory.RowCount = datRest.Rows.Count
