@@ -894,6 +894,7 @@ Public Class frmMain
     Private Sub procDisplaySalesRecords()
         datRest = New DataTable
         SqlAdapterRest = New MySqlDataAdapter
+
         Try
             With command
                 .Parameters.Clear()
@@ -902,7 +903,12 @@ Public Class frmMain
                 SqlAdapterRest.SelectCommand = command
                 datRest.Clear()
                 SqlAdapterRest.Fill(datRest)
+
+                datRest.DefaultView.Sort = "ID DESC"
+                datRest = datRest.DefaultView.ToTable()
+
                 lbltotalusers.Text = datRest.Rows.Count
+
                 If datRest.Rows.Count > 0 Then
                     dgsalesrecords.RowCount = datRest.Rows.Count
                     row = 0
